@@ -5,8 +5,7 @@
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
  *
  * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
- * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
- * Copyright (C) 2011 - 2017 SalesAgility Ltd.
+ * Copyright (C) 2011 - 2019 SalesAgility Ltd.
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -17,7 +16,7 @@
  *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
  * details.
  *
  * You should have received a copy of the GNU Affero General Public License along with
@@ -35,8 +34,8 @@
  * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
  * these Appropriate Legal Notices must retain the display of the "Powered by
  * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
- * reasonably feasible for  technical reasons, the Appropriate Legal Notices must
- * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  */
 
 if (!defined('sugarEntry') || !sugarEntry) {
@@ -44,9 +43,6 @@ if (!defined('sugarEntry') || !sugarEntry) {
 }
 
 $mod_strings = array(
-    'DESC_MODULES_INSTALLED' => 'Были установлены следующие модули:',
-    'DESC_MODULES_QUEUED' => 'Готовы к установке следующие модули:',
-
     'ERR_UW_CANNOT_DETERMINE_GROUP' => 'Невозможно определить группу',
     'ERR_UW_CANNOT_DETERMINE_USER' => 'Невозможно определить владельца',
     'ERR_UW_CONFIG_WRITE' => 'Ошибка добавления информации о новой версии в config.php.',
@@ -68,7 +64,7 @@ $mod_strings = array(
     'ERR_UW_NO_CREATE_TMP_DIR' => 'Невозможно создать временную директорию. Убедитесь, что для этого достаточно прав.',
     'ERR_UW_ONLY_PATCHES' => 'На этой странице вы можете загружать только обновления.',
     'ERR_UW_PREFLIGHT_ERRORS' => 'Обнаружены ошибки при предварительной проверке',
-    'ERR_UW_UPLOAD_ERR' => 'Ошибка загрузки файла, Пожалуйста, попробуйте ещё раз!<br>\n',
+    'ERR_UW_UPLOAD_ERR' => 'Ошибка загрузки файла, пожалуйста, попробуйте ещё раз!<br>' . PHP_EOL,
     'ERR_UW_VERSION' => 'Версия SuiteCRM: ',
     'ERR_UW_PHP_VERSION' => 'Версия PHP: ',
     'ERR_UW_SUITECRM_VERSION' => 'Версия SuiteCRM: ',
@@ -78,7 +74,6 @@ $mod_strings = array(
     'LBL_BUTTON_DELETE' => 'Удаление пакета',
     'LBL_BUTTON_DONE' => 'Готово',
     'LBL_BUTTON_EXIT' => 'Выход',
-    'LBL_BUTTON_INSTALL' => 'Обновление',
     'LBL_BUTTON_NEXT' => 'Вперёд >',
     'LBL_BUTTON_RECHECK' => 'Проверить',
     'LBL_BUTTON_RESTART' => 'Перезапустить',
@@ -90,8 +85,8 @@ $mod_strings = array(
     'LBL_UW_CANCEL_DESC' => 'Обновления было остановлено. Все временные файлы, а также файлы, загруженные в процессе обновления, были удалены.',
     'LBL_UW_CHECK_ALL' => 'Проверить все',
     'LBL_UW_CHECKLIST' => 'Стадии обновления',
-    'LBL_UW_COMMIT_ADD_TASK_DESC_1' => "Резервные копии перезаписываемых файлов находятся в директории: \n",
-    'LBL_UW_COMMIT_ADD_TASK_DESC_2' => "Необходимо вручную перезаписать следующие файлы:\n",
+    'LBL_UW_COMMIT_ADD_TASK_DESC_1' => 'Бэкапы перезаписываемых файлов находятся в этом каталоге: ' . PHP_EOL,
+    'LBL_UW_COMMIT_ADD_TASK_DESC_2' => 'Ручное объединение следующих файлов: ' . PHP_EOL,
     'LBL_UW_COMMIT_ADD_TASK_NAME' => 'Обновление: перезаписать файлы вручную',
     'LBL_UW_COMMIT_ADD_TASK_OVERVIEW' => 'Пожалуйста, для перезаписи файлов используйте наиболее удобный для вас способ. Пока вы этого не сделаете, система будет находиться в нестабильном состоянии и обновление не будет завершено.',
     'LBL_UW_COMPLETE' => 'Выполнено',
@@ -103,23 +98,19 @@ $mod_strings = array(
     'LBL_UW_COMPLIANCE_MBSTRING_FUNC_OVERLOAD' => 'Параметр MBStrings mbstring.func_overload',
     'LBL_UW_COMPLIANCE_MEMORY' => 'Настройки PHP: Максимальный размер используемой памяти',
     'LBL_UW_COMPLIANCE_STREAM' => 'Параметры PHP: Stream',
-    'LBL_UW_COMPLIANCE_MYSQL' => 'Минимальная версия MySQL ',
     'LBL_UW_COMPLIANCE_DB' => 'Минимальная версия БД',
     'LBL_UW_COMPLIANCE_PHP_INI' => 'Расположение php.ini',
     'LBL_UW_COMPLIANCE_PHP_VERSION' => 'Минимальная версия PHP',
     'LBL_UW_COMPLIANCE_SAFEMODE' => 'Настройка PHP: Safe Mode',
-    'LBL_UW_COMPLIANCE_TITLE' => 'Проверка настроек сервера',
     'LBL_UW_COMPLIANCE_TITLE2' => 'Обнаруженные настройки',
     'LBL_UW_COMPLIANCE_XML' => 'Парсинг XML',
     'LBL_UW_COMPLIANCE_ZIPARCHIVE' => 'Поддержка Zip',
     'LBL_UW_COMPLIANCE_PCRE_VERSION' => 'Версия PCRE',
-
     'LBL_UW_COPIED_FILES_TITLE' => 'Скопированные файлы',
 
     'LBL_UW_DB_CHOICE1' => 'Выполнение SQL-запроса мастером обновления',
     'LBL_UW_DB_CHOICE2' => 'Выполнение SQL-запроса вручную',
     'LBL_UW_DB_ISSUES_PERMS' => 'Привилегии базы данных',
-    'LBL_UW_DB_ISSUES' => 'База данных',
     'LBL_UW_DB_METHOD' => 'Метод обновления базы данных',
     'LBL_UW_DB_NO_ADD_COLUMN' => 'ALTER TABLE [table] ADD COLUMN [column]',
     'LBL_UW_DB_NO_CHANGE_COLUMN' => 'ALTER TABLE [table] CHANGE COLUMN [column]',
@@ -138,29 +129,27 @@ $mod_strings = array(
     'LBL_UW_END_LOGOUT_PRE2' => 'Нажмите на кнопку <b>Готово</b> для выхода из мастера обновления.',
     'LBL_UW_END_LOGOUT' => 'Если вы планируете установить ещё один пакет обновления - выйдите и войдите в систему заново.',
 
-    'LBL_UW_FILE_DELETED' => " были удалены.<br>",
+    'LBL_UW_FILE_DELETED' => ' были удалены.<br>',
     'LBL_UW_FILE_GROUP' => 'Группа',
     'LBL_UW_FILE_ISSUES_PERMS' => 'Права доступа к файлам',
-    'LBL_UW_FILE_ISSUES' => 'Версии файла',
     'LBL_UW_FILE_NO_ERRORS' => '<b>Все файлы доступны для записи</b>',
     'LBL_UW_FILE_OWNER' => 'Владелец',
     'LBL_UW_FILE_PERMS' => 'Права доступа',
     'LBL_UW_FILE_UPLOADED' => ' был загружен',
     'LBL_UW_FILE' => 'Имя файла',
     'LBL_UW_FILES_QUEUED' => 'Следующие пакеты обновления готовы к установке:',
-    'LBL_UW_FILES_REMOVED' => "Следующие файлы будут удалены из системы:<br>\n",
-    'LBL_UW_NEXT_TO_UPLOAD' => "Нажмите на кнопку <b>Вперед</b> для загрузки пакета обновления.",
+    'LBL_UW_FILES_REMOVED' => 'Следующие файлы будут удалены из системы: <br>' . PHP_EOL,
+    'LBL_UW_NEXT_TO_UPLOAD' => 'Нажмите на кнопку <b>Вперед</b> для загрузки пакета обновления.',
     'LBL_UW_FROZEN' => 'Перед тем как продолжить, загрузите пакет обновления.',
     'LBL_UW_HIDE_DETAILS' => 'Скрыть подробности',
     'LBL_UW_IN_PROGRESS' => 'В процессе...',
     'LBL_UW_INCLUDING' => 'Включая',
     'LBL_UW_INCOMPLETE' => 'Не закончено',
     'LBL_UW_MANUAL_MERGE' => 'Перезапись файла:',
+    'LBL_UW_MODULE_READY' => 'Модуль готов к установке. Кликните Commit для установки.',
     'LBL_UW_NO_INSTALLED_UPGRADES' => 'Установленных обновлений не обнаружено.',
     'LBL_UW_NONE' => 'Нет',
-    'LBL_UW_OVERWRITE_DESC' => "Все измененные файлы будут перезаписаны, включая файлы исходного кода, а так же шаблоны. Продолжить?",
-    'LBL_UW_PATCH_READY' => 'обновление готово к установке. Нажмите нижерасположенную кнопку для старта.',
-    'LBL_UW_PATCH_READY2' => '<h2>Примечания: Найдены пользовательские макеты закладок</h2><br />Следующие файлы содержат новые поля или страницы, отредактированные в Студии. Обновление, которое вы устанавливаете, содержит другие версии файлов. Для <u>каждого файла</u> вы можете:<br><ul><li>[<b>Default</b>] Сохранить вашу версию файла, оставив опцию неотмеченной. Файлы из пакета обновления будут пропущены.</li>or<li>Установить обновлённые версии файлов, отметив соответствующую опцию. Ваши макеты надо будет заново воссоздать в Студии.</li></ul>',
+    'LBL_UW_OVERWRITE_DESC' => 'Все измененные файлы будут перезаписаны, включая файлы исходного кода, а так же шаблоны. Продолжить?',
 
     'LBL_UW_PREFLIGHT_ADD_TASK' => 'Создать задачу для перезаписи вручную?',
     'LBL_UW_PREFLIGHT_EMAIL_REMINDER' => 'Отправить себе письмо с напоминанием о перезаписи вручную?',
@@ -188,12 +177,10 @@ $mod_strings = array(
     'LBL_UW_SKIPPED_FILES_TITLE' => 'Пропущенные файлы',
     'LBL_UW_SQL_RUN' => 'Проверять, когда запрос был выполнен вручную',
     'LBL_UW_START_DESC' => 'Мастер поможет вам обновить текущую версию системы.',
-    'LBL_UW_START_DESC2' => 'Настоятельно рекомендуем перед обновлением системы сделать резервные копии как базы данных, так и файлов SuiteCRM. <br>Как известно, профилактика - лучшее лечение.',
+    'LBL_UW_START_DESC2' => 'Настоятельно рекомендуем перед обновлением системы сделать резервные копии как базы данных, так и файлов SuiteCRM. Как известно, профилактика - лучшее лечение:<br/><br/><pre>composer install --no-dev</pre>', // Keep the <pre>composer install --no-dev</pre> words at the end of the sentence and do not translate it
     'LBL_UW_START_DESC3' => 'Нажмите на кнопку <b>Вперёд</b> для выполнения предварительной проверки. В процессе проверки будут проанализированы права доступа к файлам, привилегии базы данных и настройки сервера.',
     'LBL_UW_START_UPGRADED_UW_DESC' => 'Мастер обновления сейчас продолжит обновление системы.',
     'LBL_UW_START_UPGRADED_UW_TITLE' => 'Добро пожаловать в мастер обновления',
-
-    'LBL_UW_SYSTEM_CHECK_CHECKING' => 'Идёт проверка, пожалуйста, подождите.  Операция может занять порядка 30 секунд.',
 
     'LBL_UW_TITLE_CANCEL' => 'Отмена',
     'LBL_UW_TITLE_COMMIT' => 'Выполнение обновления',
@@ -223,11 +210,11 @@ $mod_strings = array(
     'LBL_UPGRADE_TAKES_TIME_HAVE_PATIENCE' => 'Обновление может занять некоторое время',
     'LBL_UPLOADE_UPGRADE_IN_PROGRESS' => 'Выполняется проверка загруженного пакета обновления',
     'LBL_UPLOADING_UPGRADE_PACKAGE' => 'Выполняется загрузка пакета обновления',
-    'LBL_UW_DROP_SCHEMA_UPGRADE_WIZARD' => 'Upgrade Wizard Drops old 451 schema',
-    'LBL_UW_DROP_SCHEMA_MANUAL' => 'Manual Drop Schema Post Upgrade',
+    'LBL_UW_DROP_SCHEMA_UPGRADE_WIZARD' => 'Помощник обновления удалил 451 устаревшую схему',
+    'LBL_UW_DROP_SCHEMA_MANUAL' => 'Удалить схему вручную',
     'LBL_UW_DROP_SCHEMA_METHOD' => 'Метод очистки старых схем',
     'LBL_UW_SHOW_OLD_SCHEMA_TO_DROP' => 'Показывать старые схемы, которые можно очистить',
-    'LBL_UW_SKIPPED_QUERIES_ALREADY_EXIST' => 'Skipped Queries',
+    'LBL_UW_SKIPPED_QUERIES_ALREADY_EXIST' => 'Пропущенные запросы',
     'LBL_INCOMPATIBLE_PHP_VERSION' => 'Требуется PHP версии 5 или выше.',
     'ERR_CHECKSYS_PHP_INVALID_VER' => 'Текущая версия РНР не поддерживается SuiteCRM.  Необходимо установить версию РНР, которая совместима с устанавливаемой версией приложения. За более подробной информацией обратитесь к таблице совместимости (Compatibility Matrix), находящейся в примечаниях к релизу. Текущая версия РНР - ',
     'LBL_BACKWARD_COMPATIBILITY_ON' => 'В PHP включён режим обратной совместимости. Для продолжения отключите параметр zend.ze1_compatibility_mode',
@@ -244,10 +231,10 @@ $mod_strings = array(
     'LBL_ML_VERSION' => 'Версия',
     'LBL_ML_INSTALL' => 'Установить',
     //adding the string used in tracker. copying from homepage
-    'LBL_CURRENT_PHP_VERSION' => '(Текущая версия PHP - ', // PR 3118
-    'LBL_RECOMMENDED_PHP_VERSION' => '. Рекомендуется версия 5.2.1 или выше)',
-	'LBL_RECOMMENDED_PHP_VERSION_1' => 'The recommended php version is ', // PR 3118
-	'LBL_RECOMMENDED_PHP_VERSION_2' => ' or above', // PR 3118. end of a sentence as in Recommended PHP version or above
+    'LBL_CURRENT_PHP_VERSION' => 'Текущая версия PHP: ',
+    'LBL_RECOMMENDED_PHP_VERSION_1' => 'Рекомендуется версия ',
+    'LBL_RECOMMENDED_PHP_VERSION_2' => ' или выше.', // End of a sentence as in Recommended PHP version is version X.Y or above
+
     'LBL_MODULE_NAME' => 'Мастер обновления',
     'LBL_UPLOAD_SUCCESS' => 'Пакет обновления успешно загружен. Нажмите на кнопку <i>Вперед</i> для выполнения предварительной проверки.',
     'LBL_UW_TITLE_LAYOUTS' => 'Обновление макетов',
@@ -262,14 +249,15 @@ $mod_strings = array(
     'ERROR_VERSION_INCOMPATIBLE' => 'Загружаемый файл не совместим с текущей версией SuiteCRM: ',
     'ERROR_PHP_VERSION_INCOMPATIBLE' => 'Загруженный файл не совместим с текущей версией PHP: ',
     'ERROR_SUITECRM_VERSION_INCOMPATIBLE' => 'Загруженный файл не совместим в текущей версией SuiteCRM: ',
-    'ERROR_FLAVOR_INCOMPATIBLE' => 'Загружаемый файл не совместим с текущей версией SuiteCRM: ',
     'LBL_LANGPACKS' => 'Языковые пакеты' /*for 508 compliance fix*/,
     'LBL_MODULELOADER' => 'Загрузчик модулей' /*for 508 compliance fix*/,
     'LBL_PATCHUPGRADES' => 'Обновления системы' /*for 508 compliance fix*/,
     'LBL_THEMES' => 'Темы' /*for 508 compliance fix*/,
+    'LBL_WORKFLOW' => 'Процессы' /*for 508 compliance fix*/,
     'LBL_UPGRADE' => 'Обновление' /*for 508 compliance fix*/,
     'LBL_PROCESSING' => 'Выполнение' /*for 508 compliance fix*/,
     'ERROR_NO_VERSION_SET' => 'В файле manifest.php не указана совместимая версия',
+    'LBL_UPGRD_CSTM_CHK' => 'Процесс обновления затронет несколько файлов, но эти файлы также присутствуют в пользовательском каталоге. Пожалуйста, проверьте изменения перед тем, как продолжить:',
     'ERR_UW_PHP_FILE_ERRORS' => array(
         1 => 'Размер загружаемого файла превышает значение, указанное в параметре upload_max_filesize файла php.ini.',
         2 => 'Размер загружаемого файла превышает значение, указанное в параметре MAX_FILE_SIZE HTML-формы.',
@@ -280,4 +268,6 @@ $mod_strings = array(
         7 => 'Невозможно записать файл на диск.',
         8 => 'Загрузка файла была прервана.',
     ),
+    'LBL_PASSWORD_EXPIRATON_CHANGED' => 'Warning: password expiration is set to none!',
+    'LBL_PASSWORD_EXPIRATON_REDIRECT' => 'Please update your settings here',
 );

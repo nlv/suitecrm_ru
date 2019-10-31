@@ -5,7 +5,7 @@
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
  *
  * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
- * Copyright (C) 2011 - 2017 SalesAgility Ltd.
+ * Copyright (C) 2011 - 2019 SalesAgility Ltd.
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -16,7 +16,7 @@
  *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
  * details.
  *
  * You should have received a copy of the GNU Affero General Public License along with
@@ -34,9 +34,13 @@
  * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
  * these Appropriate Legal Notices must retain the display of the "Powered by
  * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
- * reasonably feasible for  technical reasons, the Appropriate Legal Notices must
- * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  */
+
+if (!defined('sugarEntry') || !sugarEntry) {
+    die('Not A Valid Entry Point');
+}
 
 $mod_strings = array(
     'LBL_SALUTATION' => 'Приветствие',
@@ -68,17 +72,16 @@ $mod_strings = array(
     'LBL_ALT_ADDRESS_STATE' => 'Другой адрес - область:',
     'LBL_ALT_ADDRESS_POSTALCODE' => 'Другой адрес - индекс:',
     'LBL_ALT_ADDRESS_COUNTRY' => 'Другой адрес - страна:',
-    'LBL_STREET' => 'Другой адрес',
     'LBL_PRIMARY_STREET' => 'Адрес',
     'LBL_ALT_STREET' => 'Другой адрес',
+    'LBL_STREET' => 'Другой адрес',
     'LBL_CITY' => 'Город:',
     'LBL_STATE' => 'Область:',
-    'LBL_POSTALCODE' => 'Индекс',
     'LBL_POSTAL_CODE' => 'Индекс:',
     'LBL_COUNTRY' => 'Страна:',
     'LBL_CONTACT_INFORMATION' => 'Контактная информация',
-    'LBL_ADDRESS_INFORMATION' => 'Адресная информация',
-    'LBL_ASSIGNED_TO_NAME' => 'Пользователь: ',
+    'LBL_ADDRESS_INFORMATION' => 'Адреса',
+    'LBL_ASSIGNED_TO_NAME' => 'Пользователь',
     'LBL_OTHER_EMAIL_ADDRESS' => 'Дополнительный E-mail:',
     'LBL_ASSISTANT' => 'Помощник:',
     'LBL_ASSISTANT_PHONE' => 'Помощник - тел.:',
@@ -89,4 +92,11 @@ $mod_strings = array(
     'LBL_PHOTO' => 'Фото',
     'LBL_EDIT_BUTTON' => 'Править',
     'LBL_REMOVE' => 'Удалить',
+
+    //Lawful Basis labels
+    'LBL_LAWFUL_BASIS' => 'Законное основание',
+    'LBL_DATE_REVIEWED' => 'Обзор Дат Законного Основания',
+    'LBL_LAWFUL_BASIS_SOURCE' => 'Источник Законной Основы',
+    'LBL_CONSENT' => 'Согласие',
+    //End Lawful Basis labels
 );

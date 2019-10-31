@@ -1,11 +1,11 @@
 <?php
-if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
-/*********************************************************************************
+/**
+ *
  * SugarCRM Community Edition is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
-
- * SuiteCRM is an extension to SugarCRM Community Edition developed by Salesagility Ltd.
- * Copyright (C) 2011 - 2014 Salesagility Ltd.
+ *
+ * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
+ * Copyright (C) 2011 - 2019 SalesAgility Ltd.
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -16,7 +16,7 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
  * details.
  *
  * You should have received a copy of the GNU Affero General Public License along with
@@ -34,29 +34,29 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
  * these Appropriate Legal Notices must retain the display of the "Powered by
  * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
- * reasonably feasible for  technical reasons, the Appropriate Legal Notices must
- * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
- ********************************************************************************/
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ */
 
+if (!defined('sugarEntry') || !sugarEntry) {
+    die('Not A Valid Entry Point');
+}
 
-
-$mod_strings = array (
+$mod_strings = array(
     'LBL_OAUTH_REQUEST' => "Токен запроса",
     'LBL_OAUTH_AUTHORIZE' => "Авторизовать токен",
-	'LBL_OAUTH_CONSUMERREQ' => "Авторизовать токен пользователя <b>%s</b>?",
-    'LBL_OAUTH_ROLE' => "Роль токена",
-	'LBL_OAUTH_VALIDATION' => "Контрольный код",
-  	'LBL_ASSIGNED_TO_NAME' => 'Пользователь',
-  	'LBL_ID' => 'ID',
+    'LBL_OAUTH_CONSUMERREQ' => "Авторизовать токен пользователя <b>%s</b>?",
+    'LBL_ASSIGNED_TO_NAME' => 'Пользователь',
+    'LBL_ID' => 'ID',
     'LBL_STATUS' => 'Статус',
     'LBL_TS' => 'Отметка времени',
-    'LBL_LIST_DELETE' => 'Удалён',
+    'LBL_LIST_DELETE' => 'Удалён токен',
     'LBL_CONSUMER' => 'Пользователь',
     'LBL_OAUTH_DISABLED' => 'Поддержка OAuth отключена. Вероятно, отсутствует соответствующее расширение PHP. Для решения вопроса свяжитесь с системным администратором.',
 
-    'LBL_TOKEN_TS' => 'Token TS', // PR 3472
-    'LBL_CALLBACK_URL' => 'Callback URL', // PR 3472
-    'LBL_SECRET' => 'Secret', // PR 3472
-    'LBL_TSTATE' => 'TState', // PR 3472
-    'LBL_VERIFY' => 'Verify', // PR 3472
+    'LBL_TOKEN_TS' => 'Токен TS',
+    'LBL_CALLBACK_URL' => 'Callback URL',
+    'LBL_SECRET' => 'Пароль',
+    'LBL_TSTATE' => 'Состояние токена',
+    'LBL_VERIFY' => 'Проверить',
 );

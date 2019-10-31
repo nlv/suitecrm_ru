@@ -1,10 +1,11 @@
 <?php
-/*********************************************************************************
+/**
+ *
  * SugarCRM Community Edition is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
  *
- * SuiteCRM is an extension to SugarCRM Community Edition developed by Salesagility Ltd.
- * Copyright (C) 2011 - 2016 Salesagility Ltd.
+ * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
+ * Copyright (C) 2011 - 2019 SalesAgility Ltd.
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -15,7 +16,7 @@
  *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
  * details.
  *
  * You should have received a copy of the GNU Affero General Public License along with
@@ -33,9 +34,13 @@
  * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
  * these Appropriate Legal Notices must retain the display of the "Powered by
  * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
- * reasonably feasible for  technical reasons, the Appropriate Legal Notices must
- * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
- ********************************************************************************/
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ */
+
+if (!defined('sugarEntry') || !sugarEntry) {
+    die('Not A Valid Entry Point');
+}
 
 $mod_strings = array(
     'LBL_ASSIGNED_TO_ID' => 'Ответственный(ая)',
@@ -44,10 +49,8 @@ $mod_strings = array(
     'LBL_DATE_ENTERED' => 'Дата создания',
     'LBL_DATE_MODIFIED' => 'Дата изменения',
     'LBL_MODIFIED' => 'Изменено',
-    'LBL_MODIFIED_ID' => 'Изменено(ID)',
     'LBL_MODIFIED_NAME' => 'Изменено',
     'LBL_CREATED' => 'Создано',
-    'LBL_CREATED_ID' => 'Создано(ID)',
     'LBL_DESCRIPTION' => 'Описание',
     'LBL_DELETED' => 'Удалено',
     'LBL_NAME' => 'Событие',
@@ -62,11 +65,9 @@ $mod_strings = array(
     'LBL_HOMEPAGE_TITLE' => 'Мои события',
     'LNK_NEW_RECORD' => 'Создать событие',
     'LNK_LIST' => 'События',
-    'LNK_IMPORT_FP_EVENTS' => 'Импорт событий',
     'LBL_SEARCH_FORM_TITLE' => 'Поиск событий',
     'LBL_HISTORY_SUBPANEL_TITLE' => 'История',
     'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Мероприятия',
-    'LBL_FP_EVENTS_SUBPANEL_TITLE' => 'Событие',
     'LBL_NEW_FORM_TITLE' => 'Новое событие',
     'LBL_LOCATION' => 'Место',
     'LBL_START_DATE' => 'дата начала',
@@ -102,7 +103,7 @@ $mod_strings = array(
     'LBL_ERROR_MSG_1' => 'Все указанные контакты уже были приглашены.',
     'LBL_ERROR_MSG_2' => 'Отправка приглашений не удалась! Проверьте настройки исходящей почты.',
     'LBL_ERROR_MSG_3' => 'Отправка более чем 10 приглашений не удалась. Убедитесь, что у всех приглашаемых контактов указаны корректные E-mail. (детали содержатся в файле suitecrm.log).',
-    'LBL_ERROR_MSG_4' => ' приглашений не удалось отправить. Убедитесь, что у всех приглашаемых контактов указаны корректные E-mail. (детали содержатся в файле suitecrm.log).', //LBL_ERROR_MSG_4 Begins with a number (controller.php line 581) for example 10 emails have failed to send. 
+    'LBL_ERROR_MSG_4' => ' приглашений не удалось отправить. Убедитесь, что у всех приглашаемых контактов указаны корректные E-mail. (детали содержатся в файле suitecrm.log).', // LBL_ERROR_MSG_4 Begins with a number (controller.php line 581) for example 10 emails have failed to send.
     'LBL_ERROR_MSG_5' => 'Неверный шаблон E-mail',
     'LBL_EMAIL_INVITE' => 'Приглашение',
 
@@ -110,29 +111,23 @@ $mod_strings = array(
     'LBL_FP_EVENT_LOCATIONS_FP_EVENTS_1_FROM_FP_EVENT_LOCATIONS_TITLE' => 'Места',
     'LBL_FP_EVENTS_LEADS_1_FROM_LEADS_TITLE' => 'Предварительные контакты',
     'LBL_FP_EVENTS_PROSPECTS_1_FROM_PROSPECTS_TITLE' => 'Адресаты',
+
+    'LBL_HOURS_ABBREV' => 'час.',
+    'LBL_MINSS_ABBREV' => 'мин.',
     'LBL_FP_EVENTS_FP_EVENT_DELEGATES_1_FROM_FP_EVENT_DELEGATES_TITLE' => 'Участники',
-	// 2 lines bellow doesnt appear in git version
-	'LBL_HOURS_ABBREV' => 'час.',
-	'LBL_MINSS_ABBREV' => 'мин.',
 
-	// Attendance report
-	'LBL_CONTACT_NAME' => 'Название',
-	'LBL_ACCOUNT_NAME' => 'Компания',
-	'LBL_SIGNATURE' => 'Подпись',
-	// email templates
-	'LBL_EMAIL_ACCEPT' => 'Принять',
-	'LBL_EMAIL_DECLINE' => 'Отклонить',
-	// contacts/leads/targets subpanels
-	'LBL_LIST_INVITE_STATUS_EVENT' => 'Приглашён',
-	'LBL_LIST_ACCEPT_STATUS_EVENT' => 'Статус',
-	// counts
-	'LBL_NB_ACCEPT' => 'Принято приглашений:',
-	'LBL_NB_DECLINED' => 'Отклонено приглашений:',
-	'LBL_NB_ATTENDED' => 'Участвовали:',
+    // Attendance report
+    'LBL_CONTACT_NAME' => 'Название',
+    'LBL_ACCOUNT_NAME' => 'Компания',
+    'LBL_SIGNATURE' => 'Подпись',
+    // contacts/leads/targets subpanels
+    'LBL_LIST_INVITE_STATUS_EVENT' => 'Приглашён',
+    'LBL_LIST_ACCEPT_STATUS_EVENT' => 'Статус',
 
-	'LBL_NAME_FIRST' => 'Имя:',
-	'LBL_NAME_SECOND' => 'Фамилия:',
-     
-	'LBL_ACTIVITY_STATUS' => 'Статус активности',
-	'LBL_FP_EVENT_LOCATIONS_FP_EVENTS_1_FROM_FP_EVENTS_TITLE' => 'Event Locations from Events Title',
+    'LBL_ACTIVITY_STATUS' => 'Статус активности',
+    'LBL_FP_EVENT_LOCATIONS_FP_EVENTS_1_FROM_FP_EVENTS_TITLE' => 'Места',
+    // Email links
+    'LBL_ACCEPT_LINK' => 'Принять',
+    'LBL_DECLINE_LINK' => 'Отклонить',
+
 );

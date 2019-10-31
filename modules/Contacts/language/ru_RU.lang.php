@@ -1,11 +1,11 @@
 <?php
-if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
-/*********************************************************************************
+/**
+ *
  * SugarCRM Community Edition is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
  *
- * SuiteCRM is an extension to SugarCRM Community Edition developed by Salesagility Ltd.
- * Copyright (C) 2011 - 2016 Salesagility Ltd.
+ * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
+ * Copyright (C) 2011 - 2019 SalesAgility Ltd.
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -16,7 +16,7 @@ if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
  * details.
  *
  * You should have received a copy of the GNU Affero General Public License along with
@@ -34,32 +34,20 @@ if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
  * these Appropriate Legal Notices must retain the display of the "Powered by
  * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
- * reasonably feasible for  technical reasons, the Appropriate Legal Notices must
- * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
- ********************************************************************************/
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ */
 
-/*********************************************************************************
- * Description:  Defines the English language pack for the base application.
- * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
- * All Rights Reserved.
- * Contributor(s): ______________________________________..
- ********************************************************************************/
+if (!defined('sugarEntry') || !sugarEntry) {
+    die('Not A Valid Entry Point');
+}
 
 $mod_strings = array(
-    //DON'T CONVERT THESE THEY ARE MAPPINGS
-    'db_last_name' => 'LBL_LIST_LAST_NAME',
-    'db_first_name' => 'LBL_LIST_FIRST_NAME',
-    'db_title' => 'LBL_LIST_TITLE',
-    'db_email1' => 'LBL_LIST_EMAIL_ADDRESS',
-    'db_email2' => 'LBL_LIST_OTHER_EMAIL_ADDRESS',
-    //END DON'T CONVERT
     'ERR_DELETE_RECORD' => 'Для удаления контакта необходимо указать номер записи.',
     'LBL_ACCOUNT_ID' => 'ID контрагента:',
     'LBL_ACCOUNT_NAME' => 'Контрагент:',
     'LBL_CAMPAIGN' => 'Маркет. кампания:',
     'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Мероприятия',
-    'LBL_ADD_BUSINESSCARD' => 'Ввести визитку',
-    'LBL_ADDMORE_BUSINESSCARD' => 'Добавить другую визитку',
     'LBL_ADDRESS_INFORMATION' => 'Адресная информация',
     'LBL_ALT_ADDRESS_CITY' => 'Другой адрес - город:',
     'LBL_ALT_ADDRESS_COUNTRY' => 'Другой адрес - страна:',
@@ -78,9 +66,8 @@ $mod_strings = array(
     'LBL_ASSISTANT_PHONE' => 'Помощник - тел.:',
     'LBL_ASSISTANT' => 'Помощник:',
     'LBL_BIRTHDATE' => 'День рождения:',
-    'LBL_BUSINESSCARD' => 'Визитка',
     'LBL_CITY' => 'Город:',
-    'LBL_CAMPAIGN_ID' => 'Маркет. кампания(ID)',
+    'LBL_CAMPAIGN_ID' => 'Маркет. кампания (ID)',
     'LBL_CONTACT_INFORMATION' => 'Основная информация',  //Can be translated in all caps. This string will be used by SuiteP template menu actions
     'LBL_CONTACT_NAME' => 'Контактное лицо:',
     'LBL_CONTACT_OPP_FORM_TITLE' => 'Сделки контакта:',
@@ -95,7 +82,6 @@ $mod_strings = array(
     'LBL_DATE_MODIFIED' => 'Дата изменения:',
     'LBL_DEFAULT_SUBPANEL_TITLE' => 'Контакты',
     'LBL_DEPARTMENT' => 'Отдел:',
-    'LBL_DESCRIPTION_INFORMATION' => 'Описание',
     'LBL_DESCRIPTION' => 'Описание:',
     'LBL_DIRECT_REPORTS_SUBPANEL_TITLE' => 'Подчинённые',
     'LBL_DO_NOT_CALL' => 'Не звонить:',
@@ -107,7 +93,6 @@ $mod_strings = array(
     'LBL_EXISTING_OPPORTUNITY' => 'Использование существующей сделки',
     'LBL_FAX_PHONE' => 'Факс:',
     'LBL_FIRST_NAME' => 'Имя:',
-    'LBL_FULL_NAME' => 'Полное имя:',
     'LBL_HISTORY_SUBPANEL_TITLE' => 'История',
     'LBL_HOME_PHONE' => 'Тел. (дом.):',
     'LBL_ID' => 'ID:',
@@ -125,10 +110,8 @@ $mod_strings = array(
     'LBL_LIST_EMAIL_ADDRESS' => 'E-mail',
     'LBL_LIST_FIRST_NAME' => 'Имя',
     'LBL_LIST_FORM_TITLE' => 'Список контактов',
-    'LBL_VIEW_FORM_TITLE' => 'Обзор контакта',
     'LBL_LIST_LAST_NAME' => 'Фамилия',
     'LBL_LIST_NAME' => 'ФИО',
-    'LBL_LIST_OTHER_EMAIL_ADDRESS' => 'Другой E-mail',
     'LBL_LIST_PHONE' => 'Тел.',
     'LBL_LIST_TITLE' => 'Должность',
     'LBL_MOBILE_PHONE' => 'Тел. (моб.):',
@@ -137,7 +120,6 @@ $mod_strings = array(
     'LBL_MODULE_TITLE' => 'Контакты - ГЛАВНАЯ',
     'LBL_NAME' => 'ФИО:',
     'LBL_NEW_FORM_TITLE' => 'Новый контакт',
-    'LBL_NEW_PORTAL_PASSWORD' => 'Новый пароль портала:',
     'LBL_NOTE_SUBJECT' => 'Заметки по теме',
     'LBL_OFFICE_PHONE' => 'Тел. (раб.):',
     'LBL_OPP_NAME' => 'Название сделки:',
@@ -146,11 +128,9 @@ $mod_strings = array(
     'LBL_OTHER_EMAIL_ADDRESS' => 'Другой E-mail:',
     'LBL_OTHER_PHONE' => 'Другой тел.:',
     'LBL_PHONE' => 'Тел.:',
-    'LBL_PORTAL_ACTIVE' => 'Портал включён:',
     'LBL_PORTAL_APP' => 'Портальные приложения',
     'LBL_PORTAL_INFORMATION' => 'Портальная информация',
     'LBL_PORTAL_NAME' => 'Название портала:',
-    'LBL_PORTAL_PASSWORD_ISSET' => 'Портальный пароль установлен:',
     'LBL_STREET' => 'Улица',
     'LBL_POSTAL_CODE' => 'Индекс:',
     'LBL_PRIMARY_ADDRESS_CITY' => 'Основной адрес - город:',
@@ -162,7 +142,6 @@ $mod_strings = array(
     'LBL_PRIMARY_ADDRESS_STREET' => 'Основной адрес - улица:',
     'LBL_PRIMARY_ADDRESS' => 'Основной адрес:',
     'LBL_PRODUCTS_TITLE' => 'Продукты',
-    'LBL_RELATED_CONTACTS_TITLE' => 'Связанные контакты',
     'LBL_REPORTS_TO_ID' => 'Руководитель(ID)',
     'LBL_REPORTS_TO' => 'Руководитель:',
     'LBL_RESOURCE_NAME' => 'Название ресурса',
@@ -171,10 +150,10 @@ $mod_strings = array(
     'LBL_SEARCH_FORM_TITLE' => 'Поиск контактов',
     'LBL_SELECT_CHECKED_BUTTON_LABEL' => 'Выбрать отмеченные контакты',
     'LBL_SELECT_CHECKED_BUTTON_TITLE' => 'Выбрать отмеченные контакты',
-    'LBL_STATE' => 'Область или регион:', //For address fields
+    'LBL_STATE' => 'Область или регион:',
     'LBL_SYNC_CONTACT' => 'Синхронизация с Outlook:',
     'LBL_PROSPECT_LIST' => 'Список адресатов',
-    'LBL_TITLE' => 'Должность:',
+    'LBL_TITLE' => 'Job Title:',
     'LNK_CONTACT_LIST' => 'Контакты',
     'LNK_IMPORT_VCARD' => 'Создать контакт из vCard',
     'LNK_NEW_ACCOUNT' => 'Создать контрагента',
@@ -188,16 +167,9 @@ $mod_strings = array(
     'LNK_NEW_OPPORTUNITY' => 'Создать сделку',
     'LNK_NEW_TASK' => 'Создать задачу',
     'LNK_SELECT_ACCOUNT' => "Выбор контрагента",
-    'MSG_DUPLICATE' => 'Создаваемый вами контакт, возможно, дублирует уже имеющуюся запись. Контакты, содержащие схожие имена показаны ниже. <br>Нажмите на кнопку <b>Создать контакт</b> для создания новой записи или выберите существующую запись из списка.',
-    'MSG_SHOW_DUPLICATES' => 'Создаваемый вами контакт, возможно, дублирует уже имеющуюся запись. Контакты, содержащие схожие имена показаны ниже. Нажмите кнопку "Сохранить"  для продолжения создания нового контакта или кнопку "Отказаться" для возврата в модуль.',
-    'NTC_COPY_ALTERNATE_ADDRESS' => 'Копировать дополнительный адрес в основной',
-    'NTC_COPY_PRIMARY_ADDRESS' => 'Копировать основной адрес в дополнительный',
     'NTC_DELETE_CONFIRMATION' => 'Вы уверены, что хотите удалить эту запись?',
     'NTC_OPPORTUNITY_REQUIRES_ACCOUNT' => 'Создание сделки требует контрагента.\n Пожалуйста, или создайте нового контрагента или выберите из уже существующих.',
     'NTC_REMOVE_CONFIRMATION' => 'Вы уверены, что хотите удалить этот контакт из данного обращения?',
-    'NTC_REMOVE_DIRECT_REPORT_CONFIRMATION' => 'Вы уверены, что хотите удалить эту запись из личных отчётов?',
-
-    'LBL_USER_PASSWORD' => 'Пароль:',
 
     'LBL_LEADS_SUBPANEL_TITLE' => 'Предварительные контакты',
     'LBL_OPPORTUNITIES_SUBPANEL_TITLE' => 'Сделки',
@@ -209,40 +181,21 @@ $mod_strings = array(
     'LBL_BUGS_SUBPANEL_TITLE' => 'Ошибки',
     'LBL_PROJECTS_SUBPANEL_TITLE' => 'Проекты',
     'LBL_PROJECTS_RESOURCES' => 'Ресурсы проекта',
-    'LBL_TARGET_OF_CAMPAIGNS' => 'Адресат маркет. кампании:',
     'LBL_CAMPAIGNS' => 'Маркет. кампании',
     'LBL_CAMPAIGN_LIST_SUBPANEL_TITLE' => 'Маркет. кампании',
     'LBL_LIST_CITY' => 'Город',
-    'LBL_LIST_STATE' => 'Область',
+    'LBL_LIST_STATE' => 'Область или регион:',
     'LBL_HOMEPAGE_TITLE' => 'Мои контакты',
     'LBL_OPPORTUNITIES' => 'Сделки',
 
-    'LBL_CHECKOUT_DATE' => 'Дата проверки',
     'LBL_CONTACTS_SUBPANEL_TITLE' => 'Контакты',
     'LBL_PROJECT_SUBPANEL_TITLE' => 'Проекты',
-    'LBL_CAMPAIGNS_SUBPANEL_TITLE' => 'Маркетинговые кампании',
     'LNK_IMPORT_CONTACTS' => 'Импорт контактов',
-    'LBL_PROJECT_CONTACTS_1_FROM_PROJECT_TITLE' => 'Project contacts from project',
 
-    //For export labels
-    'LBL_PHONE_HOME' => 'Тел. (дом.)',
-    'LBL_PHONE_MOBILE' => 'Тел. (моб.)',
-    'LBL_PHONE_WORK' => 'Тел. (раб.)',
-    'LBL_PHONE_OTHER' => 'Другой тел.',
-    'LBL_PHONE_FAX' => 'Факс',
-
-    'LBL_EXPORT_ASSIGNED_USER_NAME' => 'Ответственный(ая)',
-    'LBL_EXPORT_ASSIGNED_USER_ID' => 'Ответственный(ая)-ID',
-    'LBL_EXPORT_MODIFIED_USER_ID' => 'Изменено(ID)',
-    'LBL_EXPORT_CREATED_BY' => 'Создано (ID)',
-    'LBL_EXPORT_PHONE_HOME' => 'Тел. (дом.)',
-    'LBL_EXPORT_PHONE_MOBILE' => 'Тел. (моб.)',
     // SNIP
-    'LBL_CONTACT_HISTORY_SUBPANEL_TITLE' => 'Related Contacts\' Emails',
-    'LBL_USER_SYNC' => 'User Sync',
+    'LBL_USER_SYNC' => 'Синхронизация пользователем',
 
     'LBL_FP_EVENTS_CONTACTS_FROM_FP_EVENTS_TITLE' => 'События',
-    'LBL_FP_EVENT_DELEGATES_CONTACTS_1_FROM_FP_EVENT_DELEGATES_TITLE' => 'Участники',
 
     'LBL_AOP_CASE_UPDATES' => 'Обновления обращения',
     'LBL_CREATE_PORTAL_USER' => 'Создать пользователя портала',
@@ -251,18 +204,25 @@ $mod_strings = array(
     'LBL_CREATE_PORTAL_USER_FAILED' => 'Ошибка создания пользователя портала',
     'LBL_ENABLE_PORTAL_USER_FAILED' => 'Ошибка включения пользователя портала',
     'LBL_DISABLE_PORTAL_USER_FAILED' => 'Ошибка отключения пользователя портала',
-    'LBL_CREATE_PORTAL_USER_SUCCESS' => 'Создать пользователя портала',
+    'LBL_CREATE_PORTAL_USER_SUCCESS' => 'Пользователь портала успешно создан',
     'LBL_ENABLE_PORTAL_USER_SUCCESS' => 'Включить пользователя портала',
     'LBL_DISABLE_PORTAL_USER_SUCCESS' => 'Отключить пользователя портала',
     'LBL_NO_JOOMLA_URL' => 'Не указан URL портала',
     'LBL_PORTAL_USER_TYPE' => 'Пользователь портала:',
     'LBL_PORTAL_ACCOUNT_DISABLED' => 'Учётная запись портала отключена:',
     'LBL_JOOMLA_ACCOUNT_ID' => 'ID учётной записи Joomla',
+   
+    'LBL_ERROR_NO_PORTAL_SELECTED' => 'There isn\'t any portal selected', // escaped single quotes required. PR 5426
+    'LBL_PLEASE_UPDATE_DEPRECATED_PORTAL_ERROR' => 'More than one portal URLs are set but multiple portal is not supported, please update portal component on site: ',
+    'LBL_PLEASE_UPDATE_DEPRECATED_PORTAL_WARNING' => 'Portal component is deprecated, please update portal component on site: ',
 
-    'LBL_AOS_CONTRACTS' => 'Договоры', // PR 3472
-    'LBL_AOS_INVOICES' => 'Счета', // PR 3472
-    'LBL_AOS_QUOTES' => 'Предложения', // PR 3472
-    'LBL_PROJECT_CONTACTS_1_FROM_PROJECT_TITLE' => 'Project Contacts from Project Title', // PR 3472
+    'LBL_INVALID_USER_DATA' => 'Trying to create a portal user without name and/or any email address. Please check the contact details',
+    'LBL_NO_RELATED_JACCOUNT' => 'Trying to disable a CRM User without related Joomla Portal Account',
+    'LBL_UNABLE_READ_PORTAL_VERSION' => 'Unable to read AOP version from portal', // PR 5426
+ 
+    'LBL_AOS_CONTRACTS' => 'Договоры',
+    'LBL_AOS_INVOICES' => 'Счета',
+    'LBL_AOS_QUOTES' => 'Предложения',
+    'LBL_PROJECT_CONTACTS_1_FROM_PROJECT_TITLE' => 'Контакты проекта',
+    'LBL_LANGUAGE' => 'Языковой пакет', // PR 5721
 );
-
-?>

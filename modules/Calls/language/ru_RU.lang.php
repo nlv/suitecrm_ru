@@ -1,11 +1,11 @@
 <?php
-if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
-/*********************************************************************************
+/**
+ *
  * SugarCRM Community Edition is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
  *
- * SuiteCRM is an extension to SugarCRM Community Edition developed by Salesagility Ltd.
- * Copyright (C) 2011 - 2016 Salesagility Ltd.
+ * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
+ * Copyright (C) 2011 - 2019 SalesAgility Ltd.
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -16,7 +16,7 @@ if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
  * details.
  *
  * You should have received a copy of the GNU Affero General Public License along with
@@ -34,16 +34,14 @@ if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
  * these Appropriate Legal Notices must retain the display of the "Powered by
  * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
- * reasonably feasible for  technical reasons, the Appropriate Legal Notices must
- * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
- ********************************************************************************/
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ */
 
-/*********************************************************************************
- * Description:  Defines the English language pack for the base application.
- * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
- * All Rights Reserved.
- * Contributor(s): ______________________________________..
- ********************************************************************************/
+if (!defined('sugarEntry') || !sugarEntry) {
+    die('Not A Valid Entry Point');
+}
+
 
 $mod_strings = array(
     'LBL_BLANK' => ' ',
@@ -58,13 +56,10 @@ $mod_strings = array(
     'LBL_LIST_RELATED_TO' => 'Относится к',
     'LBL_LIST_RELATED_TO_ID' => 'Относится к ID',
     'LBL_LIST_DATE' => 'Дата звонка',
-    'LBL_LIST_TIME' => 'Время',
-    'LBL_LIST_DURATION' => 'Продолжительность',
     'LBL_LIST_DIRECTION' => 'Направление',
     'LBL_SUBJECT' => 'Тема:',
     'LBL_REMINDER' => 'Напоминание:',
     'LBL_CONTACT_NAME' => 'Контакт:',
-    'LBL_DESCRIPTION_INFORMATION' => 'Описание',
     'LBL_DESCRIPTION' => 'Описание:',
     'LBL_STATUS' => 'Статус:',
     'LBL_DIRECTION' => 'Направление:',
@@ -73,18 +68,15 @@ $mod_strings = array(
     'LBL_DURATION_HOURS' => 'Продолжительность (час.):',
     'LBL_DURATION_MINUTES' => 'Продолжительность (мин.):',
     'LBL_HOURS_MINUTES' => '(часов:минут)',
-    'LBL_CALL' => 'Звонок:',
     'LBL_DATE_TIME' => 'Дата и время:',
     'LBL_TIME' => 'Время:',
     'LBL_HOURS_ABBREV' => 'час.',
     'LBL_MINSS_ABBREV' => 'мин.',
-    'LBL_COLON' => ':',
     'LNK_NEW_CALL' => 'Назначить звонок',
     'LNK_NEW_MEETING' => 'Назначить встречу',
     'LNK_CALL_LIST' => 'Звонки',
     'LNK_IMPORT_CALLS' => 'Импорт звонков',
     'ERR_DELETE_RECORD' => 'Перед удалением должен быть указан номер записи.',
-    'NTC_REMOVE_INVITEE' => 'Вы уверены, что хотите удалить это приглашённое лицо из данного звонка?',
     'LBL_INVITEE' => 'Приглашённые',
     'LBL_RELATED_TO' => 'Относится к:',
     'LNK_NEW_APPOINTMENT' => 'Назначить встречу/звонок',
@@ -96,26 +88,20 @@ $mod_strings = array(
     'LBL_EMAIL' => 'E-mail',
     'LBL_PHONE' => 'Тел.',
     'LBL_REMINDER_POPUP' => 'Во всплывающем окне',
-    'LBL_REMINDER_EMAIL' => 'E-mail',
     'LBL_REMINDER_EMAIL_ALL_INVITEES' => 'Отправить E-mail приглашённым',
     'LBL_EMAIL_REMINDER' => 'Напоминание при помощи E-mail',
     'LBL_EMAIL_REMINDER_TIME' => 'Время напоминания по E-mail',
     'LBL_SEND_BUTTON_TITLE' => 'Сохранить и отправить приглашения',
-    'LBL_SEND_BUTTON_KEY' => 'I',
     'LBL_SEND_BUTTON_LABEL' => 'Сохранить и отправить приглашения',
     'LBL_DATE_END' => 'Дата окончания',
-    'LBL_TIME_END' => 'Время окончания',
     'LBL_REMINDER_TIME' => 'Время напоминания',
     'LBL_EMAIL_REMINDER_SENT' => 'Напоминание по E-mail отправлено',
     'LBL_SEARCH_BUTTON' => 'Найти',
-    'LBL_ACTIVITIES_REPORTS' => 'Отчёты по мероприятиям',
     'LBL_ADD_BUTTON' => 'Добавить',
     'LBL_DEFAULT_SUBPANEL_TITLE' => 'Звонки',
-    'LBL_LOG_CALL' => 'Журнал звонков',
     'LNK_SELECT_ACCOUNT' => 'Выбор контрагента',
     'LNK_NEW_ACCOUNT' => 'Новый контрагент',
     'LNK_NEW_OPPORTUNITY' => 'Новая сделка',
-    'LBL_DEL' => 'Удалить',
     'LBL_LEADS_SUBPANEL_TITLE' => 'Предварительные контакты',
     'LBL_CONTACTS_SUBPANEL_TITLE' => 'Контакты',
     'LBL_USERS_SUBPANEL_TITLE' => 'Пользователи',
@@ -124,24 +110,15 @@ $mod_strings = array(
     'LBL_HISTORY_SUBPANEL_TITLE' => 'Заметки',
     'LBL_LIST_ASSIGNED_TO_NAME' => 'Ответственный(ая)',
     'LBL_LIST_MY_CALLS' => 'Мои звонки',
-    'LBL_SELECT_FROM_DROPDOWN' => 'Прежде всего выберите значение из списка "Относится к".',
     'LBL_ASSIGNED_TO_NAME' => 'Ответственный(ая)',
     'LBL_ASSIGNED_TO_ID' => 'Ответственный(ая)',
     'NOTICE_DURATION_TIME' => 'Продолжительность разговора должна быть больше 0 минут',
     'LBL_CALL_INFORMATION' => 'Основная информация', //Can be translated in all caps. This string will be used by SuiteP template menu actions
-    'LBL_REMOVE' => 'удал.',
+    'LBL_REMOVE' => 'Удалить',
     'LBL_ACCEPT_STATUS' => 'Статус приглашения',
-    'LBL_ACCEPT_LINK' => 'Accept Link',
-    //For export labels
-    'LBL_PARENT_ID' => 'ID родителя',
-    'LBL_EXPORT_MODIFIED_USER_ID' => 'Изменено(ID)',
-    'LBL_EXPORT_CREATED_BY' => 'Создано (ID)',
-    'LBL_EXPORT_ASSIGNED_USER_ID' => 'Ответственный(ая)-ID',
-    'LBL_EXPORT_DATE_START' => 'Дата и время начала',
-    'LBL_EXPORT_PARENT_TYPE' => 'Относится к модулю',
-    'LBL_EXPORT_REMINDER_TIME' => 'Напоминание (минуты)',
+    'LBL_ACCEPT_LINK' => 'Принять вызов',
 
-    // create invitee functionallity
+    // create invitee functionality
     'LBL_CREATE_INVITEE' => 'Составить приглашение:',
     'LBL_CREATE_CONTACT' => 'Создав новый контакт',
     'LBL_CREATE_LEAD' => 'Создав новый предварит. контакт',
@@ -152,17 +129,17 @@ $mod_strings = array(
 
     'LBL_REPEAT_TYPE' => 'Тип повтора',
     'LBL_REPEAT_INTERVAL' => 'Интервал повтора',
-    'LBL_REPEAT_DOW' => 'Repeat Dow',
+    'LBL_REPEAT_DOW' => 'Дни повторов',
     'LBL_REPEAT_UNTIL' => 'Прекратить',
     'LBL_REPEAT_COUNT' => 'Число повторов',
-    'LBL_REPEAT_PARENT_ID' => 'ID родителя',
+    'LBL_REPEAT_PARENT_ID' => 'Родительский ID повтора',
     'LBL_RECURRING_SOURCE' => 'Источник повтора',
 
     'LBL_SYNCED_RECURRING_MSG' => 'Данные о звонке были созданы в другой программе и синхронизированы с SuiteCRM. Для изменения данной записи откройте первоначальную программу, внесите в соответствующий звонок необходимые изменения и вновь синхронизируйте данные с SuiteCRM.',
 
     // for reminders
     'LBL_REMINDERS' => 'Напоминания',
-    'LBL_REMINDERS_ACTIONS' => 'Напомнить о мероприятии в виде:',
+    'LBL_REMINDERS_ACTIONS' => 'Действия:',
     'LBL_REMINDERS_POPUP' => 'Всплывающего уведомления браузера',
     'LBL_REMINDERS_EMAIL' => 'Приглашения по E-mail',
     'LBL_REMINDERS_WHEN' => 'Когда:',
@@ -180,9 +157,9 @@ $mod_strings = array(
     'LBL_RESCHEDULE_HISTORY' => 'История дозвона',
     'LBL_CANCEL' => 'Отказаться',
     'LBL_SAVE' => 'Сохранить',
-    'LBL_CALLS_RESCHEDULE' => 'Перенести вызовы',
-    'LBL_TYPE' => 'Тип:',
+
+    'LBL_CALLS_RESCHEDULE' => 'Отложенные звонки',
+    'LBL_LIST_STATUS'=>'Статус',
+    'LBL_LIST_DATE_MODIFIED'=>'Дата изменения',
+    'LBL_LIST_DUE_DATE'=>'Крайний срок платежа',
 );
-
-
-?>

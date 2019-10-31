@@ -5,7 +5,7 @@
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
  *
  * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
- * Copyright (C) 2011 - 2017 SalesAgility Ltd.
+ * Copyright (C) 2011 - 2019 SalesAgility Ltd.
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -16,7 +16,7 @@
  *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
  * details.
  *
  * You should have received a copy of the GNU Affero General Public License along with
@@ -34,8 +34,8 @@
  * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
  * these Appropriate Legal Notices must retain the display of the "Powered by
  * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
- * reasonably feasible for  technical reasons, the Appropriate Legal Notices must
- * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  */
 
 if (!defined('sugarEntry') || !sugarEntry) {
@@ -46,7 +46,6 @@ $mod_strings = array(
     'LBL_LOADING' => 'Загрузка' /*for 508 compliance fix*/,
     'LBL_HIDEOPTIONS' => 'Скрыть параметры' /*for 508 compliance fix*/,
     'LBL_DELETE' => 'удалить' /*for 508 compliance fix*/,
-    'LBL_POWERED_BY_SUGAR' => 'Powered By SugarCRM' /*for 508 compliance fix*/,
     'help' => array(
         'package' => array(
             'create' => 'Укажите Название пакета. Название может содержать любые буквенно-цифровые символы кроме пробелов.<br/><br/> Вы можете указать <b>Автора</b> и <b>Описание</b> пакета. <br/><br/>Для сохранения пакета нажмите на кнопку <b>Сохранить</b>.',
@@ -139,7 +138,7 @@ $mod_strings = array(
         ),
         'layoutEditor' => array(
             'defaultdetailview' => '<b>Область макета</b> содержит поля, отображаемые в <b>Форме просмотра</b>.<br/><br/><b>Инструментарий</b> содержит <b>Корзину</b>, набор дополнительных элементов и перечень доступных полей, которые могут быть добавлены в макет.<br><br>Изменяйте макет путём перемещения элементов и полей как между <b>Инструментарием</b> и <b>Макетом</b>, так и внутри самого макета.<br><br>Для удаления поля из макета переместите его в <b>Корзину</b>.Удалённое поле будет доступно в области <b>Инструментария</b>, если его вновь потребуется поместить в макет.',
-        'defaultquickcreate' => '<b>Область макета</b> содержит поля, отображаемые в <b>Форме быстрого ввода</b>.<br><br>Форма быстрого ввода появляется в субпанели модуля в тот момент, когда вы нажимаете кнопку "Создать" и служит для быстрого создания записи, связанной с текущим модулем.<br/><br/><b>Инструментарий</b> содержит <b>Корзину</b>, набор дополнительных элементов и перечень доступных полей, которые могут быть добавлены в макет.<br><br>Изменяйте макет путём перемещения элементов и полей как между <b>Инструментарием</b> и <b>Макетом</b>, так и внутри самого макета.<br><br>Для удаления поля из макета переместите его в <b>Корзину</b>. Удалённое поле будет доступно в области <b>Инструментария</b>, если его вновь потребуется поместить в макет.',
+            'defaultquickcreate' => '<b>Область макета</b> содержит поля, отображаемые в <b>Форме быстрого ввода</b>.<br><br>Форма быстрого ввода появляется в субпанели модуля в тот момент, когда вы нажимаете кнопку "Создать" и служит для быстрого создания записи, связанной с текущим модулем.<br/><br/><b>Инструментарий</b> содержит <b>Корзину</b>, набор дополнительных элементов и перечень доступных полей, которые могут быть добавлены в макет.<br><br>Изменяйте макет путём перемещения элементов и полей как между <b>Инструментарием</b> и <b>Макетом</b>, так и внутри самого макета.<br><br>Для удаления поля из макета переместите его в <b>Корзину</b>. Удалённое поле будет доступно в области <b>Инструментария</b>, если его вновь потребуется поместить в макет.',
             //this default will be used for edit view
             'default' => '<b>Область макета</b> содержит поля, отображаемые в <b>Форме редактирования</b>.<br/><br/><b>Инструментарий</b> содержит <b>Корзину</b>, набор дополнительных элементов и перечень доступных полей, которые могут быть добавлены в макет.<br><br>Изменяйте макет путём перемещения элементов и полей как между   <b>Инструментарием</b> и <b>Макетом</b>, так и внутри самого макета.<br><br>Для удаления поля из макета переместите его в <b>Корзину</b>. Удалённое поле будет доступно в области <b>Инструментария</b>, если его вновь потребуется поместить в макет.',
             'saveBtn' => 'Нажмите кнопку <b>Сохранить</b> для сохранения сделанных с момента последнего сохранения изменений. Изменения не будут отображаться в модуле до тех пор, пока вы не сохраните и не опубликуете внесённые изменения.',
@@ -182,7 +181,7 @@ $mod_strings = array(
             'relationshipsBtn' => 'Добавление новых или просмотр существующих <b>Связей</b> модуля.',
             'layoutsBtn' => 'Редактирование следующих макетов: Формы редактирования, Формы просмотра, Формы списка, Формы поиска и Формы быстрого ввода.<br><br> Вы можете указать какие поля и как будут расположены в каждом модуле.',
             'subpanelBtn' => 'Определение информации, отображаемой в <b>Субпанелях</b> модуля.',
-            'portalBtn' => 'Customize the module <b>Layouts</b> that appear in the <b>SuiteCRM Portal</b>.',
+            'portalBtn' => 'Настройка <b>Раскладок</b> модулей <b>Портала SuiteCRM</b>.',
             'layoutsHelp' => 'Выберите <b>Макет</b> для редактирования.',
             'subpanelHelp' => 'Выберите <b>Субпанель</b> для редактирования.',
             'newPackage' => 'Нажмите ссылку <b>Новый пакет</b> для создания нового пакета.',
@@ -195,30 +194,30 @@ $mod_strings = array(
             'searchBtn' => 'Редактирование макета <b>Формы поиска</b>.',
             'viewBtnQuickCreate' => 'Редактирование макета <b>Формы быстрого ввода.</b>.',
             'addLayoutHelp' => "Для создания макета Групп пользователей выберите соответствующую Группу и макет для копирования.",
-            'searchHelp' => 'The <b>Filter</b> forms that can be customized appear here.<br><br>Filter forms contain fields for filtering records.<br><br>Click an icon to select the filter layout to edit.',
+            'searchHelp' => 'Формы <b>Фильтров</b> можно настроить здесь.<br><br>Формы Фильтров содержат поля для фильтруемых записей.<br><br>Кликните на иконку, чтобы выбрать раскладку для редактирования.',
             'dashletHelp' => 'Здесь могут быть настроены макеты дашлетов.<br><br>Настроенный дашлет может быть добавлен на страницу <b>Главная</b> путём нажатия на кнопку <b>Добавить дашлет</b>.',
             'DashletListViewBtn' => 'Поля, отображаемые в дашлете.',
             'DashletSearchViewBtn' => 'Поля фильтра, доступные при настройке параметров дашлета.',
             'popupHelp' => 'Здесь отображаются макеты настраиваемых <b>Всплывающих форм</b>.<br>',
             'PopupListViewBtn' => 'Поля, отображаемые в результатах поиска записи (под Формой поиска).',
             'PopupSearchViewBtn' => 'Редактирование критериев поиска записи.',
-            'BasicSearchBtn' => 'Редактирование формы <b>Базового поиска</b> модуля.',
-            'AdvancedSearchBtn' => 'Редактирование формы <b>Расширенного поиска</b> модуля.',
+            'BasicSearchBtn' => 'Редактирование формы <b>Фильтра</b> модуля.',
+            'AdvancedSearchBtn' => 'Редактирование формы <b>Расширенного фильтра</b> модуля.',
             'portalHelp' => 'Настройка <b>Портала</b>.',
             'SPUploadCSS' => 'Загрузить <b>Таблицу стилей</b> для Портала.',
             'SPSync' => '<b>Синхронизация</b> настроек Портала.',
-            'Layouts' => 'Customize the <b>Layouts</b> of the SuiteCRM Portal modules.',
+            'Layouts' => 'Измените <b>Раскладки</b> модулей Портала SuiteCRM.',
             'portalLayoutHelp' => 'The modules within the SuiteCRM Portal appear in this area.<br><br>Select a module to edit the <b>Layouts</b>.',
             'relationshipsHelp' => 'Здесь отображаются все связи между текущим и другими модулями.<br><br> <b>Название связи</b> создаётся системой автоматически при её добавлении. <br><br>Все указанные связи принадлежат <b>Основному модулю</b> и сохраняются в соответствующей таблице.<br><br>Нажмите на  заголовке таблицы при необходимости сортировки выбранной колонки, а так же при необходимости изменения отображения колонок.<br><br>Для просмотра свойств связи нажмите на соответствующей строке таблицы.<br/><br/>Для создания новой связи нажмите на кнопку <b>Добавить связь</b>. Связи могут быть установлены между двумя любыми установленными модулями.',
             'relationshipHelp' => '<b>Связи</b> могут быть установлены между текущим и другими установленными модулями.<br><br> Визуально связи отображаются в виде субпанелей, а так же связанных полей.<br><br> Выберите один из возможных <b>Типов</b> связей модуля:<br><br> <b>Один-к-одному</b> - записи в обеих модулях будут содержать связанные поля.<br><br> <b>Один-ко-многим</b> - запись в главном модуле будет содержать субпанель, а запись в подчинённом модуле будет содержать связанное поле.<br><br> <b>Многие-ко-многим</b> - записи в обеих модулях будут содержать субпанели.<br><br> Выберите Подчинённый модуль для создания связи. <br><br> Если тип связи допускает наличие субпанелей - выберите субпанель для соответствующих модулей.<br><br>Нажмите кнопку <b>Сохранить</b> для создания связи.',
-            'convertLeadHelp' => 'Here you can add modules to the convert layout screen and modify the layouts of existing ones.<br/>
-		You can re-order the modules by dragging their rows in the table.<br/><br/>
-		<b>Module:</b> The name of the module.<br/><br/>
-		<b>Required:</b> Required modules must be created or selected before the lead can be converted.<br/><br/>
-		<b>Copy Data:</b> If checked, fields from the lead will be copied to fields with the same name in the newly created records.<br/><br/>
-		<b>Allow Selection:</b> Modules with a relate field in Contacts can be selected rather than created during the convert lead process.<br/><br/>
-		<b>Edit:</b> Modify the convert layout for this module.<br/><br/>
-		<b>Delete:</b> Remove this module from the convert layout.<br/><br/>',
+            'convertLeadHelp' => 'Здесь вы можете добавить модули на экран изменения макетов и изменить существующие макеты.<br/>
+                Вы можете изменить порядок модулей, перемещая их строки в таблице.<br/><br/>
+                <b>Модуль:</b> Название модуля.<br/><br/>
+                <b>Требуются:</b> Требуемые модули должны быть созданы или выбраны до конвертирования лида.<br/><br/>
+                <b>Копирование данных:</b> Если выбрано, поля из лида будут скопированы в поля с такими же именами вновь создаваемых записей.<br/><br/>
+                <b>Разрешить выбор:</b> Модули со связанным полем в Контактах можно выбрать, а не создавать во время процесса преобразования лида.<br/><br/>
+                <b>Изменить:</b> Изменение конвертируемого макета для этого модуля.<br/><br/>
+                <b>Удалить:</b> Удалить этот модуль из конвертируемого макета.<br/><br/>',
 
 
             'editDropDownBtn' => 'Редактировать комбобокс',
@@ -238,10 +237,10 @@ $mod_strings = array(
             'publishBtn' => 'Нажмите кнопку <b>Сохранить и установить</b> для сохранения и применения всех изменений.',
         ),
         'portalSync' => array(
-            'default' => 'Enter the <b>SuiteCRM Portal URL</b> of the portal instance to update, and click <b>Go</b>.<br><br>Then enter a valid SuiteCRM user name and password, and then click <b>Begin Sync</b>.<br><br>The customizations made to the SuiteCRM Portal <b>Layouts</b>, along with the <b>Style Sheet</b> if one was uploaded, will be transferred to specified the portal instance.',
+            'default' => 'Введите <b>Адрес Портала SuiteCRM</b>, выбранного портала для обновления и кликните <b>Начать</b>.<br><br>Затем введите правильное имя пользователя и пароль SuiteCRM и кликните <b>Начать синхронизацию</b>.<br><br>Изменения, внесённые в <b>Макеты</b>, вместе с <b>Таблицей Стилей</b>, если она была загружена, будут применены к выбранному порталу.',
         ),
         'portalStyle' => array(
-            'default' => 'You can customize the look of the SuiteCRM Portal by using a style sheet.<br><br>Select a <b>Style Sheet</b> to upload.<br><br>The style sheet will be implemented in the SuiteCRM Portal the next time a sync is performed.',
+            'default' => 'С помощью стилей, вы можете изменить внешний вид Портала SuiteCRM.<br><br>Выберите <b>Таблицу стилей</b> для загрузки.<br><br>Изменения вступят в силу после следующей синхронизации Портала SuiteCRM.',
         ),
     ),
 
@@ -298,7 +297,7 @@ $mod_strings = array(
             'exportHelp' => 'Настройки, сделанные в Студии, могут быть экспортированы в виде отдельного пакета и установлены в другие экземпляры Suite с помощью <b>Загрузчика модулей</b>.<br><br> Прежде всего, укажите <b>Название пакета</b>. Вы также можете указать <b>Автора</b> и <b>Описание</b> пакета.<br><br>Выберите содержащие пользовательские настройки модули, которые вы желаете экспортировать(для выбора будут доступны только модули, содержащие пользовательские настройки).<br><br>Затем нажмите кнопку <b>Экспортировать</b> для создания zip-архива пакета, содержащего пользовательские настройки. Созданный архив может быть загружен в другие экземпляры системы с помощью <b>Загрузчика модулей</b>',
             'exportCustomBtn' => 'Нажмите кнопку <b>Экспортировать</b> для создания zip-архива пакета, содержащего пользовательские настройки, которые вы желаете экспортировать.',
             'name' => 'Это <b>Название</b> пакета. Это название будет отображаться в процессе установки.',
-            'author' => 'The <b>Author</b> is the name of the entity that created the package. The Author can be either an individual or a company.<br><br>The Author will be displayed in Module Loader after the package is uploaded for installation in Studio.',
+            'author' => '<b>Автор</b> — это имя того, кто создал архив. Автор может быть, как отдельным человеком, так и компанией.<br><br>Автора можно узнать в Загрузчике Модулей после загрузки архива для инсталляции в Studio.',
             'description' => 'Это <b>Описание</b> пакета, которое будет отображено в Загрузчике модулей после загрузки пакета в Студии.',
         ),
         'studioWizard' => array(
@@ -314,7 +313,7 @@ $mod_strings = array(
             'labelsBtn' => 'Редактирование <b>Меток</b> полей модуля.',
             'layoutsBtn' => 'Редактирование следующих макетов: Формы редактирования, Формы просмотра, Формы списка и Формы поиска.',
             'subpanelBtn' => 'Редактирование информации, отображаемой в субпанелях модуля.',
-            'layoutsHelp' => 'Выберите <b>Макет для редактирования</b>.<br/<br/>Для редактирования макета, содержащего поля для ввода данных нажмите на <b>Форму редактирования</b>.<br/><br/>Для редактирования макета с полями, которые отображают уже введённые данные, нажмите на <b>Форму просмотра</b>.<br/><br/>Для изменения колонок, отображаемых при просмотре общего списка данных, нажмите на <b>Форме списка</b>.<br/><br/>Для изменения макетов форм Базового и Расширенного поиска нажмите на <b>Форму поиска</b>.',
+            'layoutsHelp' => 'Выберите <b>Макет для редактирования</b>.<br/><br/>Для редактирования макета, содержащего поля для ввода данных нажмите на <b>Форму редактирования</b>.<br/><br/>Для редактирования макета с полями, которые отображают уже введённые данные, нажмите на <b>Форму просмотра</b>.<br/><br/>Для изменения колонок, отображаемых при просмотре общего списка данных, нажмите на <b>Форме списка</b>.<br/><br/>Для изменения макетов форм Базового и Расширенного поиска нажмите на <b>Форму поиска</b>.',
             'subpanelHelp' => 'Выберите <b>Субпанель</b> для редактирования.',
             'searchHelp' => 'Выберите <b>Форму поиска</b> для редактирования.',
             'newPackage' => 'Нажмите ссылку <b>Новый пакет</b> для создания нового пакета.',
@@ -323,56 +322,38 @@ $mod_strings = array(
         ),
 
 
-
     ),
 //HOME
     'LBL_HOME_EDIT_DROPDOWNS' => 'Редактор комбобоксов',
-
-//ASSISTANT
-    'LBL_AS_SHOW' => 'Показывать помощник в дальнейшем',
-    'LBL_AS_IGNORE' => 'Не показывать помощник в дальнейшем',
-    'LBL_AS_SAYS' => 'Помощник',
-
 
 //STUDIO2
     'LBL_MODULEBUILDER' => 'Конструктор модулей',
     'LBL_STUDIO' => 'Студия',
     'LBL_DROPDOWNEDITOR' => 'Редактор комбобоксов',
-    'LBL_EDIT_DROPDOWN' => 'Редактирование комбобокса',
     'LBL_DEVELOPER_TOOLS' => 'Инструментарий разработчика',
-    'LBL_SUGARPORTAL' => 'Редактор портала',
-    'LBL_SYNCPORTAL' => 'Синхронизация портала',
+    'LBL_SUITEPORTAL' => 'Редактор портала',
     'LBL_PACKAGE_LIST' => 'Список пакетов',
     'LBL_HOME' => 'Главная',
     'LBL_NONE' => '-Нет-',
     'LBL_DEPLOYE_COMPLETE' => 'Установка завершена',
     'LBL_DEPLOY_FAILED' => 'В процессе установки произошла ошибка,корректная установка пакета не возможна',
-    'LBL_ADD_FIELDS' => 'Добавить пользовательские поля',
     'LBL_AVAILABLE_SUBPANELS' => 'Доступные субпанели',
     'LBL_ADVANCED' => 'Расширенный',
-    'LBL_ADVANCED_SEARCH' => 'Расширенный поиск',
+    'LBL_ADVANCED_SEARCH' => 'Расширенный фильтр',
     'LBL_BASIC' => 'Основные данные',
-    'LBL_BASIC_SEARCH' => 'Базовый поиск',
+    'LBL_BASIC_SEARCH' => 'Фильтры',
     'LBL_CURRENT_LAYOUT' => 'Текущий макет',
     'LBL_CURRENCY' => 'Валюта',
-    'LBL_CUSTOM' => 'Пользовательский',
     'LBL_DASHLET' => 'Дашлет',
     'LBL_DASHLETLISTVIEW' => 'Форма основных настроек дашлета',
-    'LBL_DASHLETSEARCH' => 'Форма фильтра дашлета',
     'LBL_POPUP' => 'Всплывающие формы',
-    'LBL_POPUPLIST' => 'Всплывающая форма списка',
     'LBL_POPUPLISTVIEW' => 'Всплывающая форма списка',
     'LBL_POPUPSEARCH' => 'Всплывающая форма поиска',
     'LBL_DASHLETSEARCHVIEW' => 'Форма фильтра дашлета',
-    'LBL_DISPLAY_HTML' => 'Просмотр кода HTML',
     'LBL_DETAILVIEW' => 'Форма просмотра',
     'LBL_DROP_HERE' => '[Переместить сюда]',
     'LBL_EDIT' => 'Редактирование:',
     'LBL_EDIT_LAYOUT' => 'Редактирование макета',
-    'LBL_EDIT_ROWS' => 'Редактирование строк',
-    'LBL_EDIT_COLUMNS' => 'Редактирование столбцов',
-    'LBL_EDIT_LABELS' => 'Редактирование надписей',
-    'LBL_EDIT_PORTAL' => 'Редактировать Portal для ',
     'LBL_EDIT_FIELDS' => 'Редактирование полей',
     'LBL_EDITVIEW' => 'Форма редактирования',
     'LBL_FILLER' => 'Пустое поле',
@@ -383,7 +364,7 @@ $mod_strings = array(
     'LBL_LAYOUT_PREVIEW' => 'Предпросмотр макета',
     'LBL_LAYOUTS' => 'Макеты',
     'LBL_LISTVIEW' => 'Форма списка',
-    'LBL_MODULES' => 'Модули:',
+    'LBL_MODULES' => 'Модули',
     'LBL_MODULE_TITLE' => 'Студия',
     'LBL_NEW_PACKAGE' => 'Новый пакет',
     'LBL_NEW_PANEL' => 'Новая панель',
@@ -392,28 +373,19 @@ $mod_strings = array(
     'LBL_PUBLISHING' => 'Публикация ...',
     'LBL_PUBLISHED' => 'Опубликовано',
     'LBL_SELECT_FILE' => 'Выбрать файл',
-    'LBL_SAVE_LAYOUT' => 'Сохранить макет',
-    'LBL_SELECT_A_SUBPANEL' => 'Выбрать субпанель',
-    'LBL_SELECT_SUBPANEL' => 'Выбрать субпанель',
     'LBL_SUBPANELS' => 'Субпанели',
     'LBL_SUBPANEL' => 'Субпанель',
     'LBL_SUBPANEL_TITLE' => 'Надпись:',
-    'LBL_SEARCH_FORMS' => 'Поиск',
-    'LBL_SEARCH' => 'Фильтр',
+    'LBL_SEARCH_FORMS' => 'Фильтры',
+    'LBL_SEARCH' => 'Найти',
+    'LBL_SEARCH_BUTTON' => 'Найти',
     'LBL_FILTER' => 'Фильтр',
-    'LBL_STAGING_AREA' => 'Стартовая область (переместите элементы сюда)',
-    'LBL_SUGAR_FIELDS_STAGE' => 'Suite Fields (click items to add to staging area)',
-    'LBL_SUGAR_BIN_STAGE' => 'Suite Bin (click items to add to staging area)',
     'LBL_TOOLBOX' => 'ИНСТРУМЕНТАРИЙ',
-    'LBL_VIEW_SUGAR_FIELDS' => 'View Suite Fields',
-    'LBL_VIEW_SUGAR_BIN' => 'View Suite Bin',
     'LBL_QUICKCREATE' => 'Форма быстрого ввода',
     'LBL_EDIT_DROPDOWNS' => 'Редактировать комбобокс',
     'LBL_ADD_DROPDOWN' => 'Добавить новый комбобокс',
     'LBL_BLANK' => '-пусто-',
     'LBL_TAB_ORDER' => 'Порядок перехода',
-    'LBL_TAB_PANELS' => 'Отображать на закладках',
-    'LBL_TAB_PANELS_HELP' => 'Отображать подразделы формы на отдельных закладках',
     'LBL_TABDEF_TYPE' => 'Отображать как',
     'LBL_TABDEF_TYPE_HELP' => 'Выбор способа отображения данного подраздела: на панели, либо на отдельной закладке.',
     'LBL_TABDEF_TYPE_OPTION_TAB' => 'Закладку',
@@ -432,8 +404,8 @@ $mod_strings = array(
     'LBL_COPY_FROM_EDITVIEW' => 'Скопировать из Формы редактирования',
     'LBL_DROPDOWN_BLANK_WARNING' => 'Необходимо заполнить и ключ и видимое значение элемента списка. Если вы хотите добавить пустое значение - нажмите на кнопку "Добавить", оставив оба поля пустыми.',
     'LBL_DROPDOWN_KEY_EXISTS' => 'Ключ уже присутствует в списке',
-    'LBL_NO_SAVE_ACTION' => 'Could not find the save action for this view.',
-    'LBL_BADLY_FORMED_DOCUMENT' => 'Studio2:establishLocation: badly formed document',
+    'LBL_NO_SAVE_ACTION' => 'Нечего сохранять.',
+    'LBL_BADLY_FORMED_DOCUMENT' => 'Studio2:establishLocation: неправильный формат документа',
 
 
 //RELATIONSHIPS
@@ -459,25 +431,19 @@ $mod_strings = array(
 
 
 //STUDIO QUESTIONS
-    'LBL_QUESTION_FUNCTION' => 'Выберите компонент.',
-    'LBL_QUESTION_MODULE1' => 'Выберите модуль.',
     'LBL_QUESTION_EDIT' => 'Выберите модуль для редактирования',
     'LBL_QUESTION_LAYOUT' => 'Выберите макет для редактирования',
     'LBL_QUESTION_SUBPANEL' => 'Выберите субпанель для редактирования',
-    'LBL_QUESTION_SEARCH' => 'Выберите макет Формы поиска для редактирования',
+    'LBL_QUESTION_SEARCH' => 'Выберите макет Формы фильтра для редактирования.',
     'LBL_QUESTION_MODULE' => 'Выберите компонент модуля для редактирования',
     'LBL_QUESTION_PACKAGE' => 'Выберите пакет для редактирования или создайте новый пакет.',
     'LBL_QUESTION_EDITOR' => 'Выберите необходимый инструмент',
-    'LBL_QUESTION_DROPDOWN' => 'Выберите комбобокс для редактирования или создайте новый комбобокс.',
     'LBL_QUESTION_DASHLET' => 'Выберите макет дашлета для редактирования.',
     'LBL_QUESTION_POPUP' => 'Выберите макет всплывающей формы для редактирования.',
 //CUSTOM FIELDS
-    'LBL_RELATE_TO' => 'Связано с',
     'LBL_NAME' => 'Название',
     'LBL_LABELS' => 'Надписи',
     'LBL_MASS_UPDATE' => 'Массовое обновление',
-    'LBL_AUDITED' => 'Аудит',
-    'LBL_CUSTOM_MODULE' => 'Модуль',
     'LBL_DEFAULT_VALUE' => 'Значение по умолчанию',
     'LBL_REQUIRED' => 'Обязательное заполнение',
     'LBL_DATA_TYPE' => 'Тип',
@@ -491,18 +457,14 @@ $mod_strings = array(
     'LBL_SECTION_PACKAGES' => 'Пакеты',
     'LBL_SECTION_PACKAGE' => 'Пакет',
     'LBL_SECTION_MODULES' => 'Модули',
-    'LBL_SECTION_PORTAL' => 'Портал',
     'LBL_SECTION_DROPDOWNS' => 'Комбобоксы',
     'LBL_SECTION_PROPERTIES' => 'Свойства',
     'LBL_SECTION_DROPDOWNED' => 'Редактирование комбобокса',
     'LBL_SECTION_HELP' => 'Краткая справка',
-    'LBL_SECTION_ACTION' => 'Действие',
     'LBL_SECTION_MAIN' => 'Главная',
-    'LBL_SECTION_EDPANELLABEL' => 'Редактор меток',
     'LBL_SECTION_FIELDEDITOR' => 'Редактирование полей',
     'LBL_SECTION_DEPLOY' => 'Установить',
     'LBL_SECTION_MODULE' => 'Модуль',
-    'LBL_SECTION_VISIBILITY_EDITOR' => 'Изменить видимость',
 //WIZARDS
 
 //LIST VIEW EDITOR
@@ -516,7 +478,6 @@ $mod_strings = array(
     'LBL_MB_PREVIEW' => 'Предпросмотр',
     'LBL_MB_RESTORE' => 'Восстановить',
     'LBL_MB_DELETE' => 'Удалить',
-    'LBL_MB_COMPARE' => 'Сравнить',
     'LBL_MB_DEFAULT_LAYOUT' => 'Стандартный макет',
 
 //END WIZARDS
@@ -529,10 +490,7 @@ $mod_strings = array(
     'LBL_BTN_CANCEL' => 'Отказаться',
     'LBL_BTN_CLOSE' => 'Закрыть',
     'LBL_BTN_SAVEPUBLISH' => 'Сохранить и установить',
-    'LBL_BTN_NEXT' => 'Вперёд>>',
-    'LBL_BTN_BACK' => '<<Назад',
     'LBL_BTN_CLONE' => 'Клонировать',
-    'LBL_BTN_ADDCOLS' => 'Добавить колонку',
     'LBL_BTN_ADDROWS' => 'Добавить строку',
     'LBL_BTN_ADDFIELD' => 'Добавить поле',
     'LBL_BTN_ADDDROPDOWN' => 'Добавить комбобокс',
@@ -553,7 +511,6 @@ $mod_strings = array(
     'LBL_BTN_VIEW_RELATIONSHIPS' => 'Просмотр связей',
     'LBL_BTN_ADD_RELATIONSHIP' => 'Добавить связь',
     'LBL_BTN_RENAME_MODULE' => 'Переименовать закладку модуля',
-    'LBL_BTN_INSERT' => 'Вставить',
 //TABS
 
 
@@ -564,7 +521,6 @@ $mod_strings = array(
     'ERROR_MINIMUM_FIELDS' => 'Макет должен содержать как минимум одно поле',
     'ERROR_GENERIC_TITLE' => 'Произошла ошибка',
     'ERROR_REQUIRED_FIELDS' => 'Вы действительно хотите продолжить? Следующие обязательные поля отсутствуют в макете:  ',
-    'ERROR_ARE_YOU_SURE' => 'Вы действительно хотите продолжить?',
 
 
 //PACKAGE AND MODULE BUILDER
@@ -581,35 +537,25 @@ $mod_strings = array(
     'LBL_WIDTH' => 'Ширина',
     'LBL_PACKAGE' => 'Пакет:',
     'LBL_TYPE' => 'Тип:',
-    'LBL_TEAM_SECURITY' => 'Team Security',
-    'LBL_ASSIGNABLE' => 'Указание ответственных',
-    'LBL_PERSON' => 'Персона',
-    'LBL_COMPANY' => 'Компания',
-    'LBL_ISSUE' => 'Описание',
-    'LBL_SALE' => 'Сделка',
-    'LBL_FILE' => 'Документ',
     'LBL_NAV_TAB' => 'Панель закладок',
     'LBL_CREATE' => 'Создать',
     'LBL_LIST' => 'Список',
-    'LBL_VIEW' => 'Просмотр',
-    'LBL_LIST_VIEW' => 'Форма просмотра',
+    'LBL_VIEW' => 'Отображать',
     'LBL_HISTORY' => 'Просмотр истории',
     'LBL_RESTORE_DEFAULT' => 'Восстановить',
     'LBL_ACTIVITIES' => 'Мероприятия',
     'LBL_NEW' => 'Новый',
     'LBL_TYPE_BASIC' => 'Базовый',
-    'LBL_TYPE_COMPANY' => 'Компания',
+    'LBL_TYPE_COMPANY' => 'компания',
     'LBL_TYPE_PERSON' => 'Персона',
     'LBL_TYPE_ISSUE' => 'Описание',
-    'LBL_TYPE_SALE' => 'Сделка',
+    'LBL_TYPE_SALE' => 'продажа',
     'LBL_TYPE_FILE' => 'Документ',
     'LBL_RSUB' => 'Эта субпанель будет отображаться в вашем модуле',
     'LBL_MSUB' => 'Эта субпанель будет отображаться в связанном модуле',
     'LBL_MB_IMPORTABLE' => 'Импортирование',
 
 // VISIBILITY EDITOR
-    'LBL_VE_VISIBLE' => 'отображается',
-    'LBL_VE_HIDDEN' => 'скрыт',
     'LBL_PACKAGE_WAS_DELETED' => 'Пакет [[package]] был удалён',
 
 //EXPORT CUSTOMS
@@ -617,7 +563,6 @@ $mod_strings = array(
     'LBL_EC_NAME' => 'Название пакета:',
     'LBL_EC_AUTHOR' => 'Автор:',
     'LBL_EC_DESCRIPTION' => 'Описание:',
-    'LBL_EC_KEY' => 'Ключ:',
     'LBL_EC_CHECKERROR' => 'Необходимо выбрать модуль.',
     'LBL_EC_CUSTOMFIELD' => 'Пользовательские поля',
     'LBL_EC_CUSTOMLAYOUT' => 'Пользовательские макеты',
@@ -626,23 +571,21 @@ $mod_strings = array(
     'LBL_EC_EXPORTBTN' => 'Экспорт',
     'LBL_MODULE_DEPLOYED' => 'Модуль был успешно установлен.',
     'LBL_UNDEFINED' => 'не определено',
-    'LBL_EC_VIEWS'=>'customized view(s)',
-    'LBL_EC_SUGARFEEDS'=>'customized feed(s)',
-    'LBL_EC_DASHLETS'=>'customized Dashlet(s)',
-    'LBL_EC_CSS'=>'customized css(s)',
-    'LBL_EC_TPLS'=>'customized tpls(s)',
-    'LBL_EC_IMAGES'=>'customized image(s)',
-    'LBL_EC_JS'=>'customized js(s)',
-    'LBL_EC_QTIP'=>'customized qtip(s)',
+    'LBL_EC_VIEWS' => 'изменённый(е) вид(ы)',
+    'LBL_EC_SUITEFEEDS' => 'изменённое(ые) поле(я)',
+    'LBL_EC_DASHLETS' => 'изменённый(ые) Дашлет(ы)',
+    'LBL_EC_CSS' => 'изменённый(е) стиль(и)',
+    'LBL_EC_TPLS' => 'изменённый(е) шаблон(ы)',
+    'LBL_EC_IMAGES' => 'изменённая(ые) картинка(и)',
+    'LBL_EC_JS' => 'изменённый(ые) скрипт(ы)',
+    'LBL_EC_QTIP' => 'изменённый(ые) qtip(s)',
 
 //AJAX STATUS
     'LBL_AJAX_FAILED_DATA' => 'Невозможно получить данные',
-    'LBL_AJAX_TIME_DEPENDENT' => 'Выполняется задача, требующая большого количества времени, пожалуйста, подождите и повторите попытку чуть позже.',
     'LBL_AJAX_LOADING' => 'Загрузка...',
     'LBL_AJAX_DELETING' => 'Удаление...',
     'LBL_AJAX_BUILDPROGRESS' => 'Выполняется создание...',
     'LBL_AJAX_DEPLOYPROGRESS' => 'Выполняется установка...',
-    'LBL_AJAX_FIELD_EXISTS' => 'Указанное название поля уже существует. Введите другое название.',
 
     'LBL_AJAX_RESPONSE_TITLE' => 'Результат',
     'LBL_AJAX_RESPONSE_MESSAGE' => 'Операция успешно завершена',
@@ -660,26 +603,18 @@ $mod_strings = array(
     'LBL_JS_VALIDATE_KEY' => 'Ключ указывается латиницей (может быть буквенно-цифровым, должен начинаться с буквы и не должен содержать пробелов).',
     'LBL_JS_VALIDATE_LABEL' => 'Укажите надпись, которая будет использоваться в качестве названия модуля',
     'LBL_JS_VALIDATE_TYPE' => 'Выберите тип создаваемого модуля из предлагаемого списка',
-    'LBL_JS_VALIDATE_REL_NAME' => 'Название - должно быть буквенно-цифровым и не содержать пробелов',
     'LBL_JS_VALIDATE_REL_LABEL' => 'Надпись - добавьте надпись, которая будет отображаться над субпанелью',
 
 //CONFIRM
     'LBL_CONFIRM_FIELD_DELETE' => 'Удаление данного пользовательского поля приведёт к удалению как самого поля, так и всех относящихся к нему данных. Также это поле будет удалено изо всех макетов, в которые оно было добавлено.\n\nПродолжить удаление?',
 
     'LBL_CONFIRM_RELATIONSHIP_DELETE' => 'Вы действительно хотите удалить эту связь?',
-    'LBL_CONFIRM_RELATIONSHIP_DEPLOY' => 'После установки связи она станет постоянной. Вы действительно хотите установить эту связь?',
     'LBL_CONFIRM_DONT_SAVE' => 'С момента последнего сохранения были внесены изменения. Желаете их сохранить?',
     'LBL_CONFIRM_DONT_SAVE_TITLE' => 'Сохранить изменения?',
     'LBL_CONFIRM_LOWER_LENGTH' => 'Данные могут быть урезаны и это действие не может быть отменено. Вы действительно хотите продолжить?',
 
 //POPUP HELP
     'LBL_POPHELP_FIELD_DATA_TYPE' => 'Выберите соответствующий тип данных, основываясь на данных, которые будут вводиться в поле.',
-    'LBL_POPHELP_SEARCHABLE' => 'Select the boost level for this field. <br />Fields with a higher boost level will be given greater weight when the search is performed. <br />When a search is performed, matching records containing fields with a greater weight will be appear higher in the search results.<br /> If you change the boost level for a field from one level to another, perform a system index to apply the change. <br/> Be sure to select to delete the existing data at the time that the system index is performed.',
-    'LBL_POPHELP_IMPORTABLE' => '<b>Да</b>: Поле будет задействовано при операции импортирования.<br><b>Нет</b>: Поле НЕ будет задействовано при операции импортирования.<br><b>Обязательное</b>: При выполнении импортирования значение поля НЕ может быть пустым.',
-    'LBL_POPHELP_IMAGE_WIDTH' => 'Укажите ширину поля в пикселях.<br> Загружаемая картинка будет масштабирована до указанной ширины.',
-    'LBL_POPHELP_IMAGE_HEIGHT' => 'Укажите высоту поля в пикселях.<br> Загружаемая картинка будет масштабирована до указанной высоты.',
-    'LBL_POPHELP_DUPLICATE_MERGE' => '<b>Включено</b>: Поле появится в списке полей при объединении дубликатов, но НЕ будет доступно для использования в условии фильтра при поиске дубликатов.<br><br><b>Выключено</b>: Поле НЕ появится в списке полей при объединении дубликатов и НЕ будет доступно для использования в условии фильтра при поиске дубликатов.',
-    'LBL_POPHELP_GLOBAL_SEARCH' => 'Select to use this field when searching for records using the Global Search on this module.',
 
 //Revert Module labels
     'LBL_RESET' => 'Сбросить',
@@ -691,19 +626,7 @@ $mod_strings = array(
     'LBL_REMOVE_FIELDS' => 'Удалить пользовательские поля',
     'LBL_CLEAR_EXTENSIONS' => 'Очистить расширения',
     'LBL_HISTORY_TIMESTAMP' => 'Время создания',
-    'LBL_HISTORY_TITLE' => 'история',
-
-
-    'LBL_ADD_LAYOUT' => 'Добавить макет',
-    'LBL_ADD_LAYOUTS' => 'Добавить макет',
-    'LBL_QUESTION_ADD_LAYOUT' => 'Выбрать макет Групп для добавления.',
-    'LBL_REMOVE_LAYOUT' => 'Удалить макет Групп',
-
-    'LBL_SECURITYGROUP' => 'Группы пользователей:',
-    'LBL_COPY_FROM' => 'Копировать из:',
-    'LBL_ADDLAYOUTDONE' => 'Сохранённый макет',
-    'LBL_REMOVELAYOUTDONE' => 'Удалённый макет',
-    'LBL_REMOVE_CONFIRM' => 'Вы действительно уверены?',
+    'LBL_HISTORY_TITLE' => ' история изменений',
 
     'fieldTypes' => array(
         'varchar' => 'Текстовое поле',
@@ -711,7 +634,7 @@ $mod_strings = array(
         'float' => 'Значение с плавающей точкой',
         'bool' => 'Флажок',
         'enum' => 'Выпадающий список',
-        'dynamicenum' => 'Dynamic DropDown',
+        'dynamicenum' => 'Динамический раскрывающийся список',
         'multienum' => 'Множественное выделение',
         'date' => 'Дата',
         'phone' => 'Телефон',
@@ -724,9 +647,9 @@ $mod_strings = array(
         'url' => 'URL-адрес',
         'iframe' => 'Плавающий фрейм',
         'datetimecombo' => 'Дата/время',
-        'encrypt'=>'Encrypt',
         'decimal' => 'Десятичное значение',
         'image' => 'Изображение',
+        'wysiwyg' => 'WYSIWYG',
     ),
     'labelTypes' => array(
         "frequently_used" => "Часто используемые метки",
@@ -735,13 +658,8 @@ $mod_strings = array(
 
     'parent' => 'Гибкие отношения',
 
-    'LBL_ILLEGAL_FIELD_VALUE' => "Ключ комбобокса не может содержать кавычки.",
     'LBL_CONFIRM_SAVE_DROPDOWN' => "Вы удаляете выбранные значения из списка. Таким образом, удаляемые значения будут недоступны во всех комбобоксах, использующих данный список. Продолжить?",
-    'LBL_POPHELP_VALIDATE_US_PHONE' => 'Select to validate this field for the entry of a 10-digit phone number,<br>with allowance for the country code 1,<br>and to apply a U.S. format to the phone number when the record is saved.<br> The following format will be applied: (xxx) xxx-xxxx.',
-
-
 
     'LBL_ALL_MODULES' => 'Все модули',
     'LBL_RELATED_FIELD_ID_NAME_LABEL' => '{0} (связано с ID модуля {1})',
 );
-

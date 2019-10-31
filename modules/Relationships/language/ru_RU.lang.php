@@ -1,11 +1,11 @@
 <?php
-if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
-/*********************************************************************************
+/**
+ *
  * SugarCRM Community Edition is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
-
- * SuiteCRM is an extension to SugarCRM Community Edition developed by Salesagility Ltd.
- * Copyright (C) 2011 - 2014 Salesagility Ltd.
+ *
+ * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
+ * Copyright (C) 2011 - 2019 SalesAgility Ltd.
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -16,7 +16,7 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
  * details.
  *
  * You should have received a copy of the GNU Affero General Public License along with
@@ -34,35 +34,29 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
  * these Appropriate Legal Notices must retain the display of the "Powered by
  * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
- * reasonably feasible for  technical reasons, the Appropriate Legal Notices must
- * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
- ********************************************************************************/
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ */
 
- /*********************************************************************************
+if (!defined('sugarEntry') || !sugarEntry) {
+    die('Not A Valid Entry Point');
+}
 
- * Description:  Defines the English language pack for the base application.
- * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
- * All Rights Reserved.
- * Contributor(s): ______________________________________..
- ********************************************************************************/
-
-$mod_strings = array (
-  'LBL_ID' => 'ID отношения',
-  'LBL_RELATIONSHIP_NAME' => 'Название отношения',
-  'LBL_LHS_MODULE' => 'Название модуля LHS',
-  'LBL_LHS_TABLE' => 'Название таблицы LHS',
-  'LBL_LHS_KEY' => 'Название ключа LHS',
-  'LBL_RHS_MODULE' => 'Название модуля RHS',
-  'LBL_RHS_TABLE' => 'Название таблицы RHS',
-  'LBL_RHS_KEY' => 'Название ключа RHS',
-  'LBL_JOIN_TABLE' => 'Название присоединённой таблицы',
-  'LBL_JOIN_KEY_LHS' => 'Ключ присоединения LHS',
-  'LBL_JOIN_KEY_RHS' => 'Ключ присоединения RHS',
-  'LBL_RELATIONSHIP_TYPE' => 'Тип отношения',
-  'LBL_RELATIONSHIP_ROLE_COLUMN' => 'Название столбца роли отношения',
-  'LBL_RELATIONSHIP_ROLE_COLUMN_VALUE' => 'Значение столбца роли отношения',
-  'LBL_REVERSE' => 'Обратить' ,
-  'LBL_DELETED' => 'Удалено',
+$mod_strings = array(
+    'LBL_ID' => 'ID отношения',
+    'LBL_RELATIONSHIP_NAME' => 'Название отношения',
+    'LBL_LHS_MODULE' => 'Название модуля LHS',
+    'LBL_LHS_TABLE' => 'Название таблицы LHS',
+    'LBL_LHS_KEY' => 'Название ключа LHS',
+    'LBL_RHS_MODULE' => 'Название модуля RHS',
+    'LBL_RHS_TABLE' => 'Название таблицы RHS',
+    'LBL_RHS_KEY' => 'Название ключа RHS',
+    'LBL_JOIN_TABLE' => 'Название присоединённой таблицы',
+    'LBL_JOIN_KEY_LHS' => 'Ключ присоединения LHS',
+    'LBL_JOIN_KEY_RHS' => 'Ключ присоединения RHS',
+    'LBL_RELATIONSHIP_TYPE' => 'Тип отношения',
+    'LBL_RELATIONSHIP_ROLE_COLUMN' => 'Название столбца роли отношения',
+    'LBL_RELATIONSHIP_ROLE_COLUMN_VALUE' => 'Значение столбца роли отношения',
+    'LBL_REVERSE' => 'Обратить',
+    'LBL_DELETED' => 'Удалено',
 );
-  
-?>

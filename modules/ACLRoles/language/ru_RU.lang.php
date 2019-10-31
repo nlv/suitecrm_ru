@@ -1,11 +1,11 @@
 <?php
-if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
-/*********************************************************************************
+/**
+ *
  * SugarCRM Community Edition is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
-
- * SuiteCRM is an extension to SugarCRM Community Edition developed by Salesagility Ltd.
- * Copyright (C) 2011 - 2014 Salesagility Ltd.
+ *
+ * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
+ * Copyright (C) 2011 - 2019 SalesAgility Ltd.
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -16,7 +16,7 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
  * details.
  *
  * You should have received a copy of the GNU Affero General Public License along with
@@ -34,29 +34,32 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
  * these Appropriate Legal Notices must retain the display of the "Powered by
  * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
- * reasonably feasible for  technical reasons, the Appropriate Legal Notices must
- * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
- ********************************************************************************/
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ */
 
-$mod_strings = array (
-'LBL_MODULE_NAME' => 'Роли',
-'LBL_MODULE_TITLE' => 'Роли - Главная',
-'LBL_ROLE'=>'Роль',
-'LBL_NAME'=>'Проектная задача',
-'LBL_DESCRIPTION'=>'Описание',
-'LIST_ROLES'=>'Роли',
-'LBL_USERS_SUBPANEL_TITLE'=>'Пользователи',
-'LIST_ROLES_BY_USER'=>'Список ролей по пользователям',
-'LBL_LIST_FORM_TITLE' => 'Роли',
-'LBL_ROLES_SUBPANEL_TITLE'=>'Роли пользователя',
-'LBL_SEARCH_FORM_TITLE'=>'Найти',
-'LBL_CREATE_ROLE'=>'Создать роль',
-'LBL_EDIT_VIEW_DIRECTIONS'=>'Нажмите два раза на элементе для изменения значения.',
-'LBL_ACCESS_DEFAULT'=>'По умолчанию',
-'LBL_ACTION_ADMIN'=>'Тип доступа',
-'LBL_ALL'=>'Все',
-'LBL_DUPLICATE_OF'=>'Дублирует ',
-'LBL_MODULES'=>'Модули',
-'LBL_SECURITYGROUPS'=>'Группы пользователей',
-)
-?>
+if (!defined('sugarEntry') || !sugarEntry) {
+    die('Not A Valid Entry Point');
+}
+
+$mod_strings = array(
+    'LBL_MODULE_NAME' => 'Роли',
+    'LBL_MODULE_TITLE' => 'Роли - Главная',
+    'LBL_ROLE' => 'Роль',
+    'LBL_NAME' => 'Проектная задача',
+    'LBL_DESCRIPTION' => 'Описание',
+    'LIST_ROLES' => 'Роли',
+    'LBL_USERS_SUBPANEL_TITLE' => 'Пользователи',
+    'LIST_ROLES_BY_USER' => 'Список ролей по пользователям',
+    'LBL_LIST_FORM_TITLE' => 'Роли',
+    'LBL_ROLES_SUBPANEL_TITLE' => 'Роли пользователя',
+    'LBL_SEARCH_FORM_TITLE' => 'Найти',
+    'LBL_CREATE_ROLE' => 'Создать роль',
+    'LBL_EDIT_VIEW_DIRECTIONS' => 'Нажмите на элементе для изменения значения.',
+    'LBL_ACCESS_DEFAULT' => 'По умолчанию',
+    'LBL_ACTION_ADMIN' => 'Тип доступа',
+    'LBL_ALL' => 'Все',
+    'LBL_DUPLICATE_OF' => 'Дублирует ',
+
+    'LBL_SECURITYGROUPS' => 'Группы пользователей',
+);

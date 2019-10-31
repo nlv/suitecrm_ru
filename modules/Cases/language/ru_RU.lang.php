@@ -1,11 +1,11 @@
 <?php
-if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
-/*********************************************************************************
+/**
+ *
  * SugarCRM Community Edition is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
  *
- * SuiteCRM is an extension to SugarCRM Community Edition developed by Salesagility Ltd.
- * Copyright (C) 2011 - 2016 Salesagility Ltd.
+ * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
+ * Copyright (C) 2011 - 2019 SalesAgility Ltd.
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -16,7 +16,7 @@ if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
  * details.
  *
  * You should have received a copy of the GNU Affero General Public License along with
@@ -34,16 +34,13 @@ if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
  * these Appropriate Legal Notices must retain the display of the "Powered by
  * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
- * reasonably feasible for  technical reasons, the Appropriate Legal Notices must
- * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
- ********************************************************************************/
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ */
 
-/*********************************************************************************
- * Description:  Defines the English language pack for the base application.
- * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
- * All Rights Reserved.
- * Contributor(s): ______________________________________..
- ********************************************************************************/
+if (!defined('sugarEntry') || !sugarEntry) {
+    die('Not A Valid Entry Point');
+}
 
 $mod_strings = array(
     'ERR_DELETE_RECORD' => 'Вы должны указать номер записи перед удалением.',
@@ -63,18 +60,14 @@ $mod_strings = array(
     'LBL_ACCOUNT_NAME' => 'Контрагент:',
     'LBL_ACCOUNTS_SUBPANEL_TITLE' => 'Контрагенты',
     'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Мероприятия',
-    'LBL_ATTACH_NOTE' => 'Прикрепить заметку',
     'LBL_BUGS_SUBPANEL_TITLE' => 'Ошибки',
     'LBL_CASE_NUMBER' => 'Номер обращения:',
-    'LBL_CASE_SUBJECT' => 'Тема примера:',
     'LBL_CASE' => 'Обращение:',
-    'LBL_CONTACT_CASE_TITLE' => 'Контакт обращения:',
     'LBL_CONTACT_NAME' => 'Контактное лицо:',
     'LBL_CONTACT_ROLE' => 'Роль:',
     'LBL_CONTACTS_SUBPANEL_TITLE' => 'Контакты',
     'LBL_DEFAULT_SUBPANEL_TITLE' => 'Обращения',
     'LBL_DESCRIPTION' => 'Описание:',
-    'LBL_FILENANE_ATTACHMENT' => 'Вложение',
     'LBL_HISTORY_SUBPANEL_TITLE' => 'История',
     'LBL_INVITEE' => 'Контакты',
     'LBL_MEMBER_OF' => 'Контрагент',
@@ -89,7 +82,6 @@ $mod_strings = array(
     'LBL_SEARCH_FORM_TITLE' => 'Поиск обращения',
     'LBL_STATUS' => 'Статус:',
     'LBL_SUBJECT' => 'Тема:',
-    'LBL_SYSTEM_ID' => 'System ID',
     'LBL_LIST_ASSIGNED_TO_NAME' => 'Ответственный(ая)',
     'LBL_LIST_ACCOUNT_NAME' => 'Контрагент',
     'LBL_LIST_ASSIGNED' => 'Ответственный(ая)',
@@ -104,8 +96,6 @@ $mod_strings = array(
 
     'LNK_CASE_LIST' => 'Обращения',
     'LNK_NEW_CASE' => 'Создать обращение',
-    'NTC_REMOVE_FROM_BUG_CONFIRMATION' => 'Вы действительно хотите удалить это обращение из данной ошибки?',
-    'NTC_REMOVE_INVITEE' => 'Вы действительно хотите удалить это контактное лицо из данного обращения?',
     'LBL_LIST_DATE_CREATED' => 'Дата создания',
     'LBL_ASSIGNED_TO_NAME' => 'Ответственный(ая)',
     'LBL_TYPE' => 'Тип',
@@ -117,41 +107,14 @@ $mod_strings = array(
     'LBL_PROJECT_SUBPANEL_TITLE' => 'Проекты',
     'LBL_CASE_INFORMATION' => 'Основная информация',  //Can be translated in all caps. This string will be used by SuiteP template menu actions
 
-    //For export labels
-    'LBL_MODIFIED_BY_NAME_OWNER' => 'Изменено',
- 
-    'LBL_CREATED_BY_NAME_OWNER' => 'Создано',
-
-    'LBL_ASSIGNED_USER_NAME_OWNER' => 'Ответственный(ая)',
-
-    'LBL_TEAM_COUNT_OWNER' => 'Team Count Owner',
-
-    'LBL_TEAM_NAME_OWNER' => 'Team Name Owner',
-
-    'LBL_ACCOUNT_NAME_OWNER' => 'Account Name Owner',
-
-    'LBL_MODIFIED_USER_NAME' => 'Изменено',
-    'LBL_MODIFIED_USER_NAME_OWNER' => 'Изменено',
-
-    'LBL_PORTAL_VIEWABLE' => 'Portal Viewable',
-    'LBL_EXPORT_ASSIGNED_USER_ID' => 'Ответственный(ая)-ID',
-    'LBL_EXPORT_MODIFIED_USER_ID' => 'Изменено(ID)',
-    'LBL_EXPORT_CREATED_BY' => 'Создано (ID)',
-    'LBL_EXPORT_CREATED_BY_NAME' => 'Создано',
-    'LBL_EXPORT_ASSIGNED_USER_NAME' => 'Ответственный(ая)',
-    'LBL_EXPORT_TEAM_COUNT' => 'Team Count',
-
     // SNIP
-    'LBL_CONTACT_HISTORY_SUBPANEL_TITLE' => 'Related Contacts\' Emails',
-
     'LBL_UPDATE_TEXT' => 'Текст обновления', //Field for Case updates with text only
     'LBL_INTERNAL' => 'Внутреннее обновление',
     'LBL_AOP_CASE_UPDATES' => 'Обновления обращения',
     'LBL_AOP_CASE_UPDATES_THREADED' => 'Хроника обновлений обращения',
     'LBL_CASE_UPDATES_COLLAPSE_ALL' => 'Свернуть все',
     'LBL_CASE_UPDATES_EXPAND_ALL' => 'Развернуть все',
-    'LBL_NO_CASE_UPDATES' => "У данного обращения нет обновлений",
-    'LBL_AOP_CASE_ATTACHMENTS' => 'Вложения: ',
+    'LBL_AOP_CASE_ATTACHMENTS' => 'Вложения:',
 
     'LBL_AOP_CASE_EVENTS' => 'События обращения',
     'LBL_CASE_ATTACHMENTS_DISPLAY' => 'Вложения:',
@@ -163,8 +126,7 @@ $mod_strings = array(
     'LBL_SELECT_EXTERNAL_CASE_DOCUMENT' => 'Внешний файл',
     'LBL_CONTACT_CREATED_BY_NAME' => 'Создано',
     'LBL_CONTACT_CREATED_BY' => 'Создано',
-    'LBL_CASE_UPDATE_FORM' => 'Добавить вложение', //Form for attachements on case updates
-    'LBL_AOP_INTERNAL' => 'Внутренний',
+    'LBL_CASE_UPDATE_FORM' => 'Добавить вложение', //Form for attachments on case updates
+    'LBL_CREATOR_PORTAL' => 'Portal URL', //PR 5426
+    'LBL_SUGGESTION' => 'Suggestion', //PR 5426
 );
-
-?>

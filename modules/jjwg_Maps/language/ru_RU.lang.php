@@ -5,7 +5,7 @@
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
  *
  * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
- * Copyright (C) 2011 - 2016 SalesAgility Ltd.
+ * Copyright (C) 2011 - 2019 SalesAgility Ltd.
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -16,7 +16,7 @@
  *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
  * details.
  *
  * You should have received a copy of the GNU Affero General Public License along with
@@ -34,12 +34,15 @@
  * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
  * these Appropriate Legal Notices must retain the display of the "Powered by
  * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
- * reasonably feasible for  technical reasons, the Appropriate Legal Notices must
- * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  */
 
+if (!defined('sugarEntry') || !sugarEntry) {
+    die('Not A Valid Entry Point');
+}
+
 $mod_strings['LBL_MAP'] = 'Карта';
-$mod_strings['LBL_MAPS'] = 'Карты';
 $mod_strings['LBL_MODULE_NAME'] = 'Карты';
 $mod_strings['LBL_MODULE_TITLE'] = 'Карты: Главная';
 $mod_strings['LBL_MODULE_ID'] = 'Карты';
@@ -53,10 +56,8 @@ $mod_strings['LBL_MODULE_TYPE'] = 'Отображать на карте объе
 $mod_strings['LBL_DISTANCE'] = 'Отображать объекты, находящиеся в радиусе:';
 $mod_strings['LBL_UNIT_TYPE'] = 'Единицы измерения расстояния:';
 
-$mod_strings['LBL_MAP_ACTION'] = 'Map It';
 $mod_strings['LBL_MAP_DISPLAY'] = 'Отобразить карту';
 $mod_strings['LBL_MAP_LEGEND'] = 'Условные обозначения:';
-$mod_strings['LBL_MAP_USERS'] = 'Пользователи:';
 $mod_strings['LBL_MAP_USER_GROUPS'] = 'Другие обозначения:';
 $mod_strings['LBL_MAP_GROUP'] = 'Группа';
 $mod_strings['LBL_MAP_TYPE'] = 'Тип';
@@ -67,11 +68,6 @@ $mod_strings['LBL_MAP_GOOGLE_MAPS_VIEW'] = 'Карты Google';
 $mod_strings['LNK_NEW_MAP'] = 'Добавить новую карту';
 $mod_strings['LNK_NEW_RECORD'] = 'Добавить новую карту';
 $mod_strings['LNK_MAP_LIST'] = 'Карты';
-$mod_strings['LNK_IMPORT_MAPS'] = 'Импорт карт';
-$mod_strings['LBL_MAP_GEOCODE_ADDRESSES'] = 'Геокодировать адреса';
-$mod_strings['LBL_MAP_DONATE'] = 'Помочь проекту';
-$mod_strings['LBL_MAP_DONATE_TO_THIS_PROJECT'] = 'Помочь проекту';
-$mod_strings['LBL_BUG_FIX'] = 'Исправление Ошибки';
 
 $mod_strings['LBL_MAP_ADDRESS_TEST'] = 'Тест геокодирования';
 $mod_strings['LBL_MAP_QUICK_RADIUS'] = 'Отобразить объекты';
@@ -80,10 +76,17 @@ $mod_strings['LBL_MAP_ADDRESS'] = 'Адрес';
 $mod_strings['LBL_MAP_PROCESS'] = 'Запустить';
 
 $mod_strings['LBL_MAP_LAST_STATUS'] = 'Статус геокодирования';
-$mod_strings['LBL_MAP_GEOCODED_COUNTS'] = 'Результаты геокодирования';
 $mod_strings['LBL_GEOCODED_COUNTS'] = 'Результаты геокодирования';
 $mod_strings['LBL_CRON_URL'] = 'Cron URL:';
 $mod_strings['LBL_MODULE_HEADING'] = 'Модуль';
+
+$mod_strings['LBL_N/A'] = 'N/A';
+$mod_strings['LBL_ZERO_RESULTS'] = 'Zero Results';
+$mod_strings['LBL_OK'] = 'Готово';
+$mod_strings['LBL_INVALID_REQUEST'] = 'Invalid Request';
+$mod_strings['LBL_APPROXIMATE'] = 'Approximate';
+$mod_strings['LBL_EMPTY'] = 'Пусто';
+
 $mod_strings['LBL_MODULE_TOTAL_HEADING'] = 'Всего';
 $mod_strings['LBL_MODULE_RESET_HEADING'] = 'Сбросить';
 $mod_strings['LBL_GEOCODED_COUNTS_DESCRIPTION'] = 'В приведённой таблице показано количество геокодированных записей по модулям, сгруппированных в зависимости от полученных результатов. Помните, что Карты Google накладывают ограничение на определение количества координат, равное 2500 запросам в сутки для одного ip-адреса. Данный модуль кэширует результаты геокодирования для уменьшения количества необходимых запросов.';
@@ -93,7 +96,6 @@ $mod_strings['LBL_EXPORT_ADDRESS_URL'] = 'Экспорт адресов';
 $mod_strings['LBL_EXPORT_INSTRUCTIONS'] = 'При необходимости геокодирования адресов сторонними утилитами, вы можете воспользоваться следующими ссылками для экспорта адресов из соответствующих модулей. По окончании геокодирования импортируйте обновлённые адреса через модуль Кэш адресов. Помните, что модуль Кэш адресов используется как необязательное дополнение к основному функционалу карт. Вся информация, полученная в результате геокодирования, хранится в соответствующем модуле.';
 $mod_strings['LBL_ADDRESS_CACHE'] = 'Кэш адресов';
 $mod_strings['LBL_ADD_TO_TARGET_LIST'] = 'Добавить в список адресатов';
-$mod_strings['LBL_ADD_TO_TARGET_LIST_CONFIRM'] = 'Вы действительно хотите добавить выбранные записи в список адресатов?';
 $mod_strings['LBL_ADD_TO_TARGET_LIST_PROCESSING'] = 'Добавление...';
 
 
@@ -104,8 +106,8 @@ $mod_strings['LBL_SHIPPING_ADDRESS'] = 'Отгрузочный адрес';
 $mod_strings['LBL_PRIMARY_ADDRESS'] = 'Основной адрес';
 $mod_strings['LBL_ALTERNATIVE_ADDRESS'] = 'Другой адрес';
 $mod_strings['LBL_ADDRESS_FLEX_RELATE'] = 'Гибкие отношения';
-$mod_strings['LBL_ADDRESS_ADDRESS'] = 'Address (Simple, Users)';
-$mod_strings['LBL_ADDRESS_CUSTOM'] = 'Custom (Custom Controller Logic)';
+$mod_strings['LBL_ADDRESS_ADDRESS'] = 'Адрес (Простой, Пользователи)';
+$mod_strings['LBL_ADDRESS_CUSTOM'] = 'Пользовательский (Пользовательская логика контроллера)';
 $mod_strings['LBL_ENABLED'] = 'Вкл.';
 $mod_strings['LBL_DISABLED'] = 'Выкл.';
 $mod_strings['LBL_DEFAULT'] = 'По умолчанию:';
@@ -143,7 +145,6 @@ $mod_strings['LBL_CONFIG_GEOCODING_API_URL_TITLE'] = 'URL API-сервиса г�
 $mod_strings['LBL_CONFIG_GEOCODING_API_URL_DESC'] = 'Адрес Google Maps API V3 либо адрес прокси-сервера.';
 $mod_strings['LBL_CONFIG_GEOCODING_API_SECRET_TITLE'] = 'Секретная фраза:';
 $mod_strings['LBL_CONFIG_GEOCODING_API_SECRET_DESC'] = 'Секретная фраза прокси-сервера.';
-$mod_strings['LBL_CONFIG_GEOCODING_API_SECRET_GET_A_KEY'] = 'Get a free Google Maps Geocoding API key (to geocode a generous quota of addresses per day for free).';
 $mod_strings['LBL_CONFIG_GEOCODING_LIMIT_TITLE'] = 'Лимит геокодирования:';
 $mod_strings['LBL_CONFIG_GEOCODING_LIMIT_DESC'] = "Установка лимита на количество записей, получаемых запросом для геокодирования.";
 $mod_strings['LBL_CONFIG_GOOGLE_GEOCODING_LIMIT_TITLE'] = 'Лимит геокодирования для Google:';
@@ -184,7 +185,7 @@ $mod_strings['LBL_CONFIG_CUSTOM_CONTROLLER_DESC'] = "Примечание: вс�
 $mod_strings['LBL_JJWG_MAPS_JJWG_AREAS_FROM_JJWG_AREAS_TITLE'] = 'Участки карт';
 $mod_strings['LBL_JJWG_MAPS_JJWG_MARKERS_FROM_JJWG_MARKERS_TITLE'] = 'Метки';
 $mod_strings['LBL_PARENT_ID'] = 'ID родителя';
-$mod_strings['LBL_JJWP_PARTNERS'] = 'JJWP партнеры';
-$mod_strings['LBL_GET_GOOGLE_API_KEY'] = 'Get a Key';
-$mod_strings['LBL_GOOGLE_API_KEY'] = 'Google Api Key';
-$mod_strings['LBL_ERROR_NO_GOOGLE_API_KEY'] = 'Please set the Google Api Key in the Google Maps Administrative Panel.';
+$mod_strings['LBL_JJWP_PARTNERS'] = 'Партнёры JJWP';
+$mod_strings['LBL_GET_GOOGLE_API_KEY'] = 'Получить ключ API';
+$mod_strings['LBL_GOOGLE_API_KEY'] = 'Ключ Google Maps API';
+$mod_strings['LBL_ERROR_NO_GOOGLE_API_KEY'] = 'Ключ не обнаружен. Перейдите в панель Администрирования и укажите ключ API в настройках параметров карт Google.';

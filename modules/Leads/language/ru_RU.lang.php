@@ -1,11 +1,11 @@
 <?php
-if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
-/*********************************************************************************
+/**
+ *
  * SugarCRM Community Edition is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
  *
- * SuiteCRM is an extension to SugarCRM Community Edition developed by Salesagility Ltd.
- * Copyright (C) 2011 - 2016 Salesagility Ltd.
+ * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
+ * Copyright (C) 2011 - 2019 SalesAgility Ltd.
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -16,7 +16,7 @@ if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
  * details.
  *
  * You should have received a copy of the GNU Affero General Public License along with
@@ -34,33 +34,29 @@ if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
  * these Appropriate Legal Notices must retain the display of the "Powered by
  * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
- * reasonably feasible for  technical reasons, the Appropriate Legal Notices must
- * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
- ********************************************************************************/
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ */
 
-/*********************************************************************************
- * Description:  Defines the English language pack for the base application.
- * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
- * All Rights Reserved.
- * Contributor(s): ______________________________________..
- ********************************************************************************/
+if (!defined('sugarEntry') || !sugarEntry) {
+    die('Not A Valid Entry Point');
+}
 
 $mod_strings = array(
     //DON'T CONVERT THESE THEY ARE MAPPINGS
-    'db_last_name' => 'LBL_LIST_LAST_NAME', //DON'T CONVERT THESE THEY ARE MAPPINGS
-    'db_first_name' => 'LBL_LIST_FIRST_NAME', //DON'T CONVERT THESE THEY ARE MAPPINGS
-    'db_title' => 'LBL_LIST_TITLE', //DON'T CONVERT THESE THEY ARE MAPPINGS
-    'db_email1' => 'LBL_LIST_EMAIL_ADDRESS', //DON'T CONVERT THESE THEY ARE MAPPINGS
-    'db_account_name' => 'LBL_LIST_ACCOUNT_NAME', //DON'T CONVERT THESE THEY ARE MAPPINGS
-    'db_email2' => 'LBL_LIST_EMAIL_ADDRESS', //DON'T CONVERT THESE THEY ARE MAPPINGS
-
+    'db_last_name' => 'LBL_LIST_LAST_NAME',
+    'db_first_name' => 'LBL_LIST_FIRST_NAME',
+    'db_title' => 'LBL_LIST_TITLE',
+    'db_email1' => 'LBL_LIST_EMAIL_ADDRESS',
+    'db_account_name' => 'LBL_LIST_ACCOUNT_NAME',
+    'db_email2' => 'LBL_LIST_EMAIL_ADDRESS',
     //END DON'T CONVERT
+
     'ERR_DELETE_RECORD' => 'Перед удалением предварительного контакта должен быть определён номер записи.',
     'LBL_ACCOUNT_DESCRIPTION' => 'Описание контрагента',
     'LBL_ACCOUNT_ID' => 'ID контрагента',
     'LBL_ACCOUNT_NAME' => 'Контрагент:',
     'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Мероприятия',
-    'LBL_ADD_BUSINESSCARD' => 'Добавить визитку',
     'LBL_ADDRESS_INFORMATION' => 'Адресная информация',
     'LBL_ALT_ADDRESS_CITY' => 'Другой адрес - город',
     'LBL_ALT_ADDRESS_COUNTRY' => 'Другой адрес - страна',
@@ -76,7 +72,6 @@ $mod_strings = array(
     'LBL_ANY_PHONE' => 'Любой тел.:',
     'LBL_ASSIGNED_TO_NAME' => 'Ответственный(ая)',
     'LBL_ASSIGNED_TO_ID' => 'Ответственный(ая):',
-    'LBL_BACKTOLEADS' => 'Вернуться к предварительным контактам',
     'LBL_BUSINESSCARD' => 'Преобразовать предв. контакт',
     'LBL_CITY' => 'Город:',
     'LBL_CONTACT_ID' => 'Идентификатор контакта',
@@ -103,7 +98,6 @@ $mod_strings = array(
     'LBL_CREATED_OPPORTUNITY' => 'Создана новая сделка',
     'LBL_DEFAULT_SUBPANEL_TITLE' => 'Предварительные контакты',
     'LBL_DEPARTMENT' => 'Отдел:',
-    'LBL_DESCRIPTION_INFORMATION' => 'Описание',
     'LBL_DESCRIPTION' => 'Описание:',
     'LBL_DO_NOT_CALL' => 'Не звонить:',
     'LBL_DUPLICATE' => 'Дублирующиеся предварительные контакты',
@@ -114,7 +108,6 @@ $mod_strings = array(
     'LBL_EXISTING_OPPORTUNITY' => 'Использована существующая сделка',
     'LBL_FAX_PHONE' => 'Факс:',
     'LBL_FIRST_NAME' => 'Имя:',
-    'LBL_FULL_NAME' => 'Полное имя:',
     'LBL_HISTORY_SUBPANEL_TITLE' => 'История',
     'LBL_HOME_PHONE' => 'Тел. (дом.) :',
     'LBL_IMPORT_VCARD' => 'Импортирование vCard',
@@ -132,7 +125,6 @@ $mod_strings = array(
     'LBL_LIST_DATE_ENTERED' => 'Дата создания',
     'LBL_LIST_EMAIL_ADDRESS' => 'E-mail',
     'LBL_LIST_FIRST_NAME' => 'Имя',
-    'LBL_VIEW_FORM_TITLE' => 'Просмотр предварительного контакта',
     'LBL_LIST_FORM_TITLE' => 'Список предварительных контактов',
     'LBL_LIST_LAST_NAME' => 'Фамилия',
     'LBL_LIST_LEAD_SOURCE_DESCRIPTION' => 'Описание источника предварительного контакта',
@@ -148,8 +140,7 @@ $mod_strings = array(
     'LBL_MODULE_TITLE' => 'Предварительные контакты - ГЛАВНАЯ',
     'LBL_NAME' => 'ФИО:',
     'LBL_NEW_FORM_TITLE' => 'Новый предв. контакт',
-    'LBL_NEW_PORTAL_PASSWORD' => 'Новый пароль портала:',
-    'LBL_OFFICE_PHONE' => 'Тел. (раб.) :',
+    'LBL_OFFICE_PHONE' => 'Тел. (раб.):',
     'LBL_OPP_NAME' => 'Название сделки:',
     'LBL_OPPORTUNITY_AMOUNT' => 'Сумма сделки:',
     'LBL_OPPORTUNITY_ID' => 'ID сделки',
@@ -157,11 +148,9 @@ $mod_strings = array(
     'LBL_OTHER_EMAIL_ADDRESS' => 'Другой E-mail:',
     'LBL_OTHER_PHONE' => 'Другой тел.:',
     'LBL_PHONE' => 'Тел.:',
-    'LBL_PORTAL_ACTIVE' => 'Портал включён:',
     'LBL_PORTAL_APP' => 'Портальное приложение',
     'LBL_PORTAL_INFORMATION' => 'Портальная информация',
     'LBL_PORTAL_NAME' => 'Название портала:',
-    'LBL_PORTAL_PASSWORD_ISSET' => 'Портальный пароль установлен:',
     'LBL_POSTAL_CODE' => 'Индекс:',
     'LBL_STREET' => 'Улица',
     'LBL_PRIMARY_ADDRESS_CITY' => 'Основной адрес - город',
@@ -175,19 +164,16 @@ $mod_strings = array(
     'LBL_REFERED_BY' => 'Передан от:',
     'LBL_REPORTS_TO_ID' => 'Руководитель (ID)',
     'LBL_REPORTS_TO' => 'Руководитель:',
-    'LBL_REPORTS_FROM' => 'Подчинённый:',
     'LBL_SALUTATION' => 'Приветствие',
     'LBL_MODIFIED' => 'Изменено',
-    'LBL_MODIFIED_ID' => 'Изменено(ID)',
     'LBL_CREATED' => 'Создано',
-    'LBL_CREATED_ID' => 'Создано(ID)',
     'LBL_SEARCH_FORM_TITLE' => 'Поиск предварительных контактов',
     'LBL_SELECT_CHECKED_BUTTON_LABEL' => 'Выбрать отмеченные предварительные контакты',
     'LBL_SELECT_CHECKED_BUTTON_TITLE' => 'Выбрать отмеченные предварительные контакты',
-    'LBL_STATE' => 'Область или регион:', //For address fields
+    'LBL_STATE' => 'Область или регион:',
     'LBL_STATUS_DESCRIPTION' => 'Описание статуса:',
     'LBL_STATUS' => 'Статус:',
-    'LBL_TITLE' => 'Должность:',
+    'LBL_TITLE' => 'Job Title:',
     'LNK_IMPORT_VCARD' => 'Создать предв. контакт из vCard',
     'LNK_LEAD_LIST' => 'Предв. контакты',
     'LNK_NEW_ACCOUNT' => 'Создать контрагента',
@@ -201,35 +187,20 @@ $mod_strings = array(
     'LNK_NEW_MEETING' => 'Назначить встречу',
     'LNK_NEW_OPPORTUNITY' => 'Создать сделку',
     'LNK_SELECT_ACCOUNTS' => ' <b>ИЛИ</b> выбрать существующего контрагента',
-    'LNK_SELECT_CONTACTS' => ' <b>ИЛИ</b> выбрать существующий контакт',
-    'NTC_COPY_ALTERNATE_ADDRESS' => 'Копировать дополнительный адрес в основной',
-    'NTC_COPY_PRIMARY_ADDRESS' => 'Копировать основной адрес в дополнительный',
+    'LNK_SELECT_CONTACTS' => ' <b>Или</b> Выберите контакт',
     'NTC_DELETE_CONFIRMATION' => 'Вы уверены, что хотите удалить эту запись?',
-    'NTC_OPPORTUNITY_REQUIRES_ACCOUNT' => 'Сделка должна быть связана с контрагентом.\n Пожалуйста, создайте нового контрагента или выберите из списка уже существующих.',
     'NTC_REMOVE_CONFIRMATION' => 'Вы уверены, что хотите удалить этот предварительный контакт из данного обращения?',
-    'NTC_REMOVE_DIRECT_REPORT_CONFIRMATION' => 'Вы уверены, что хотите удалить эту запись из личных отчётов?',
     'LBL_CAMPAIGN_LIST_SUBPANEL_TITLE' => 'Маркетинговые кампании',
-    'LBL_TARGET_OF_CAMPAIGNS' => 'Успешная маркет. кампания:',
-    'LBL_TARGET_BUTTON_LABEL' => 'Отмечен как адресат',
-    'LBL_TARGET_BUTTON_TITLE' => 'Отмечен как адресат',
-    'LBL_TARGET_BUTTON_KEY' => 'T',
     'LBL_CAMPAIGN' => 'Маркет. кампания:',
     'LBL_LIST_ASSIGNED_TO_NAME' => 'Ответственный(ая)',
     'LBL_PROSPECT_LIST' => 'Список адресатов',
     'LBL_CAMPAIGN_LEAD' => 'Маркет. кампании',
     'LBL_BIRTHDATE' => 'День рождения:',
-    'LBL_THANKS_FOR_SUBMITTING_LEAD' => 'Благодарим Вас за отправку регистрационных данных.',
-    'LBL_SERVER_IS_CURRENTLY_UNAVAILABLE' => 'Извините, но в данный момент сервер недоступен. Попробуйте ещё раз немного позже.',
     'LBL_ASSISTANT_PHONE' => 'Тел. помощника',
     'LBL_ASSISTANT' => 'Помощник',
-    'LBL_REGISTRATION' => 'Регистрация',
-    'LBL_MESSAGE' => 'Please enter your information below. Information and/or an account will be created for you pending approval.',
-    'LBL_SAVED' => 'Благодарим Вас за регистрацию. Ваша учетная запись будет создана.',
-    'LBL_CLICK_TO_RETURN' => 'Return to Portal',
     'LBL_CREATED_USER' => 'Создано',
     'LBL_MODIFIED_USER' => 'Изменено',
     'LBL_CAMPAIGNS' => 'Маркет. кампании',
-    'LBL_CAMPAIGNS_SUBPANEL_TITLE' => 'Маркетинговые кампании',
     'LBL_CONVERT_MODULE_NAME' => 'Модуль',
     'LBL_CONVERT_REQUIRED' => 'Требуется',
     'LBL_CONVERT_SELECT' => 'Разрешить выбор',
@@ -241,7 +212,6 @@ $mod_strings = array(
     'LBL_SELECT' => ' <b>ИЛИ</b> выбрать',
     'LBL_WEBSITE' => 'Веб-сайт',
     'LNK_IMPORT_LEADS' => 'Импорт предв. контактов',
-    'LBL_NOTICE_OLD_LEAD_CONVERT_OVERRIDE' => 'Внимание: текущая страница преобразования предварительного контакта содержит индивидуальные поля. Во время кастомизации страницы преобразования предварительного контакта в Студии в первый раз, необходимо добавить индивидуальные поля в макет. Эти поля не будут автоматически отображаться в макете, как прежде.',
 //Convert lead tooltips
     'LBL_MODULE_TIP' => 'Модуль, в котором будет создана новая запись.',
     'LBL_REQUIRED_TIP' => 'Необходимые модули должны быть созданы или выбраны до процесса конвертации предварительного контакта.',
@@ -255,18 +225,7 @@ $mod_strings = array(
     'LBL_ACTIVITIES_MOVE_HELP' => "Выберите запись, в которую будут перемещены существующие мероприятия предварительного контакта.<br>Будут перемещены все Задачи, Звонки, Встречи, Заметки и электронные письма.",
     'LBL_ACTIVITIES_COPY_HELP' => "Выберите записи, в которых будут созданы копии существующих мероприятий предварительного контакта.<br>Создаваемые Задачи, Звонки, Встречи, Заметки и электронные письма будут связаны со всеми выбранными записями.",
     //For export labels
-    'LBL_PHONE_HOME' => 'Тел. (дом.)',
-    'LBL_PHONE_MOBILE' => 'Тел. (моб.)',
-    'LBL_PHONE_WORK' => 'Тел. (раб.)',
-    'LBL_PHONE_OTHER' => 'Другой тел.',
-    'LBL_PHONE_FAX' => 'Факс',
-    'LBL_CAMPAIGN_ID' => 'ID маркет. кампании',
-    'LBL_EXPORT_ASSIGNED_USER_NAME' => 'Ответственный(ая)',
-    'LBL_EXPORT_ASSIGNED_USER_ID' => 'Ответственный(ая)-ID',
-    'LBL_EXPORT_MODIFIED_USER_ID' => 'Изменено(ID)',
-    'LBL_EXPORT_CREATED_BY' => 'Создано (ID)',
-    'LBL_EXPORT_PHONE_MOBILE' => 'Тел. (моб.)',
-    'LBL_EXPORT_EMAIL2' => 'Другой E-mail',
+    'LBL_CAMPAIGN_ID' => 'Маркет. кампания (ID)',
     'LBL_EDITLAYOUT' => 'Изменить макет' /*for 508 compliance fix*/,
     'LBL_ENTERDATE' => 'Укажите дату' /*for 508 compliance fix*/,
     'LBL_LOADING' => 'Загрузка' /*for 508 compliance fix*/,
@@ -274,4 +233,3 @@ $mod_strings = array(
     'LBL_FP_EVENTS_LEADS_1_FROM_FP_EVENTS_TITLE' => 'События',
     'LBL_WWW' => 'WWW',
 );
-?>

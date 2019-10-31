@@ -1,11 +1,11 @@
 <?php
-if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
-/*********************************************************************************
+/**
+ *
  * SugarCRM Community Edition is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
-
- * SuiteCRM is an extension to SugarCRM Community Edition developed by Salesagility Ltd.
- * Copyright (C) 2011 - 2014 Salesagility Ltd.
+ *
+ * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
+ * Copyright (C) 2011 - 2019 SalesAgility Ltd.
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -16,7 +16,7 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
  * details.
  *
  * You should have received a copy of the GNU Affero General Public License along with
@@ -34,45 +34,39 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
  * these Appropriate Legal Notices must retain the display of the "Powered by
  * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
- * reasonably feasible for  technical reasons, the Appropriate Legal Notices must
- * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
- ********************************************************************************/
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ */
 
-/*********************************************************************************
+if (!defined('sugarEntry') || !sugarEntry) {
+    die('Not A Valid Entry Point');
+}
 
- * Description:  Defines the English language pack for the base application.
- * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
- * All Rights Reserved.
- * Contributor(s): ______________________________________..
- ********************************************************************************/
+$mod_strings = array(
+    'LBL_ID' => 'ID',
+    'LBL_TRACKER_KEY' => 'Код трекера',
+    'LBL_TRACKER_URL' => 'URL трекера',
+    'LBL_TRACKER_NAME' => 'Название трекера',
+    'LBL_CAMPAIGN_ID' => 'Маркет. кампания (ID)',
+    'LBL_DATE_ENTERED' => 'Дата ввода',
+    'LBL_DATE_MODIFIED' => 'Дата изменения',
+    'LBL_MODIFIED_USER_ID' => 'Изменено(ID)',
+    'LBL_CREATED_BY' => 'Кем создано',
+    'LBL_DELETED' => 'Удалено',
+    'LBL_CAMPAIGN' => 'Рассылка',
+    'LBL_OPTOUT' => 'Ссылка для отписки',
 
-$mod_strings = array (
-	'LBL_ID'=>'ID',
-	'LBL_TRACKER_KEY'=>'Код трекера',
-	'LBL_TRACKER_URL'=>'URL трекера',
-	'LBL_TRACKER_NAME'=>'Название трекера',
-	'LBL_CAMPAIGN_ID'=>'ID рассылки',
-	'LBL_DATE_ENTERED'=>'Дата ввода',
-	'LBL_DATE_MODIFIED'=>'Дата изменения',
-	'LBL_MODIFIED_USER_ID'=>'Изменено(ID)',
-	'LBL_CREATED_BY'=>'Кем создано',
-	'LBL_DELETED'=>'Удалено',
-	'LBL_CAMPAIGN'=>'Рассылка',
-	'LBL_OPTOUT'=>'Ссылка для отписки',
-	
-	'LBL_MODULE_NAME'=>'Трекеры маркетинговой кампании',
-	'LBL_EDIT_CAMPAIGN_NAME'=>'Название рассылки:',
-	'LBL_EDIT_TRACKER_NAME'=>'Название трекера:',
-	'LBL_EDIT_TRACKER_URL'=>'URL трекера:',
-	
-	'LBL_SUBPANEL_TRACKER_NAME'=>'Название',
-	'LBL_SUBPANEL_TRACKER_URL'=>'URL-адрес',
-	'LBL_SUBPANEL_TRACKER_KEY'=>'Ключ',
-	'LBL_EDIT_MESSAGE_URL'=>'URL для сообщений рассылки:',
-	'LBL_EDIT_TRACKER_KEY'=>'Ключ трекера:',
-	'LBL_EDIT_OPT_OUT'=>'Ссылка для отписки?',
-	'LNK_CAMPAIGN_LIST'=>'Маркетинговые кампании',
-	'LBL_EDIT_LAYOUT' => 'Изменить макет' /*for 508 compliance fix*/,
+    'LBL_MODULE_NAME' => 'Трекеры маркетинговой кампании',
+    'LBL_EDIT_CAMPAIGN_NAME' => 'Название рассылки:',
+    'LBL_EDIT_TRACKER_NAME' => 'Название трекера:',
+    'LBL_EDIT_TRACKER_URL' => 'URL трекера:',
+
+    'LBL_SUBPANEL_TRACKER_NAME' => 'Название',
+    'LBL_SUBPANEL_TRACKER_URL' => 'URL-адрес',
+    'LBL_SUBPANEL_TRACKER_KEY' => 'Ключ',
+    'LBL_EDIT_MESSAGE_URL' => 'URL для сообщений рассылки:',
+    'LBL_EDIT_TRACKER_KEY' => 'Ключ трекера:',
+    'LBL_EDIT_OPT_OUT' => 'Ссылка для отписки?',
+    'LNK_CAMPAIGN_LIST' => 'Маркетинговые кампании',
+    'LBL_EDIT_LAYOUT' => 'Изменить макет' /*for 508 compliance fix*/,
 );
-
-?>

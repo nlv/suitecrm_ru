@@ -1,58 +1,55 @@
 <!--
-/*********************************************************************************
-* SugarCRM Community Edition is a customer relationship management program developed by
-* SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
-
-* SuiteCRM is an extension to SugarCRM Community Edition developed by Salesagility Ltd.
-* Copyright (C) 2011 - 2017 Salesagility Ltd.
-*
-* This program is free software; you can redistribute it and/or modify it under
-* the terms of the GNU Affero General Public License version 3 as published by the
-* Free Software Foundation with the addition of the following permission added
-* to Section 15 as permitted in Section 7(a): FOR ANY PART OF THE COVERED WORK
-* IN WHICH THE COPYRIGHT IS OWNED BY SUGARCRM, SUGARCRM DISCLAIMS THE WARRANTY
-* OF NON INFRINGEMENT OF THIRD PARTY RIGHTS.
-*
-* This program is distributed in the hope that it will be useful, but WITHOUT
-* ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-* FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
-* details.
-*
-* You should have received a copy of the GNU Affero General Public License along with
-* this program; if not, see http://www.gnu.org/licenses or write to the Free
-* Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
-* 02110-1301 USA.
-*
-* You can contact SugarCRM, Inc. headquarters at 10050 North Wolfe Road,
-* SW2-130, Cupertino, CA 95014, USA. or at email address contact@sugarcrm.com.
-*
-* The interactive user interfaces in modified source and object code versions
-* of this program must display Appropriate Legal Notices, as required under
-* Section 5 of the GNU Affero General Public License version 3.
-*
-* In accordance with Section 7(b) of the GNU Affero General Public License version 3,
-* these Appropriate Legal Notices must retain the display of the "Powered by
-* SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
-* reasonably feasible for  technical reasons, the Appropriate Legal Notices must
-* display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
-********************************************************************************/
-
-/*********************************************************************************
-
-********************************************************************************/
+/**
+ *
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
+ *
+ * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
+ * Copyright (C) 2011 - 2019 SalesAgility Ltd.
+ *
+ * This program is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License version 3 as published by the
+ * Free Software Foundation with the addition of the following permission added
+ * to Section 15 as permitted in Section 7(a): FOR ANY PART OF THE COVERED WORK
+ * IN WHICH THE COPYRIGHT IS OWNED BY SUGARCRM, SUGARCRM DISCLAIMS THE WARRANTY
+ * OF NON INFRINGEMENT OF THIRD PARTY RIGHTS.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along with
+ * this program; if not, see http://www.gnu.org/licenses or write to the Free
+ * Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ * 02110-1301 USA.
+ *
+ * You can contact SugarCRM, Inc. headquarters at 10050 North Wolfe Road,
+ * SW2-130, Cupertino, CA 95014, USA. or at email address contact@sugarcrm.com.
+ *
+ * The interactive user interfaces in modified source and object code versions
+ * of this program must display Appropriate Legal Notices, as required under
+ * Section 5 of the GNU Affero General Public License version 3.
+ *
+ * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
+ * these Appropriate Legal Notices must retain the display of the "Powered by
+ * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ */
 -->
 <!-- BEGIN: Quote_Subject -->
-<p>SuiteCRM Quote - {QUOTE_SUBJECT}</p>
+<p>SuiteCRM цитату - {QUOTE_SUBJECT}</p>
 <!-- END: Quote_Subject -->
 <!-- BEGIN: Quote -->
-<p><b>{ASSIGNER}</b> has assigned a Quote to <b>{ASSIGNED_USER}</b>.</p>
+<p><b>{ASSIGNER}</b> назначил предложение <b>{ASSIGNED_USER}</b>.</p>
 <p>
 Тема: {QUOTE_SUBJECT}<br />
 Статус: {QUOTE_STATUS}<br />
 Ожидаемая дата закрытия: {QUOTE_CLOSEDATE}<br />
 Описание: {QUOTE_DESCRIPTION}
 </p>
-<p>Вы можете <a href={URL}>просмотреть эту цитату</a>.</p>
+<p>Вы можете <a href={URL}>просмотреть эту смету</a>.</p>
 <!-- END: Quote -->
 
 <!-- BEGIN: Account_Subject -->
@@ -65,7 +62,7 @@
 Тип: {ACCOUNT_TYPE}<br />
 Описание: {ACCOUNT_DESCRIPTION}
 </p>
-<p>You may <a href={URL}>review this Account</a>.</p>
+<p>Вы можете просмотреть информацию по этому контрагенту <a href={URL}>здесь</a>.</p>
 <!-- END: Account -->
 
 <!-- BEGIN: Case_Subject -->
@@ -105,7 +102,7 @@
 <p><b>{ASSIGNER}</b> пригласил(а) Вас на встречу</p>
 <p>
 Тема: {MEETING_SUBJECT}<br />
-Расположение: {MEETING_LOCATION}<br />
+Место встречи: {MEETING_LOCATION}<br />
 Дата начала: {MEETING_STARTDATE}<br />
 Дата окончания: {MEETING_ENDDATE}
 </p>
@@ -117,25 +114,25 @@ URL встречи: {MEETING_URL}
 <p>Описание: {MEETING_DESCRIPTION}<br />
 </p>
 <p>---</p>
-<p><a href={ACCEPT_URL}&accept_status=accept>Accept this meeting</a>.</p>
-<p><a href={ACCEPT_URL}&accept_status=tentative>Tentatively Accept this meeting</a>.</p>
-<p><a href={ACCEPT_URL}&accept_status=decline>Decline this meeting</a>.</p>
+<p><a href={ACCEPT_URL}&accept_status=accept>Принять участие во встрече</a>.</p>
+<p><a href={ACCEPT_URL}&accept_status=tentative>Участие во встрече пока под вопросом</a>.</p>
+<p><a href={ACCEPT_URL}&accept_status=decline>Отклонить встречу</a>.</p>
 <!-- END: Meeting -->
 
 <!-- BEGIN: MeetingSpecial_Subject -->
 <p>SuiteCRM - Встреча: {MEETING_SUBJECT}</p>
 <!-- END: MeetingSpecial_Subject -->
 <!-- BEGIN: MeetingSpecial -->
-<p><b>{ASSIGNER}</b> has assigned a Meeting to <b>{ASSIGNED_USER}</b>.</p>
+<p><b>{ASSIGNER}</b>назначил(а) встречу пользователю <b>{ASSIGNED_USER}</b>.</p>
 <p>
-Subject: {MEETING_SUBJECT}<br />
-Location: {MEETING_LOCATION}<br />
-Status: {MEETING_STATUS}<br />
-Start Date: {MEETING_STARTDATE}<br />
-End Date: {MEETING_ENDDATE}<br />
-Description: {MEETING_DESCRIPTION}
+Тема: {MEETING_SUBJECT}<br />
+Место нахождения: {MEETING_LOCATION}<br />
+Статус: {MEETING_STATUS}<br />
+Дата начала: {MEETING_STARTDATE}<br />
+Дата окончания: {MEETING_ENDDATE}<br />
+Описание: {MEETING_DESCRIPTION}
 </p>
-<p>You may <a href={URL}>review this Meeting</a>.</p>
+<p>Вы можете просмотреть <a href={URL}>информацию по этой встрече</a>.</p>
 <!-- END: MeetingSpecial -->
 
 <!-- BEGIN: MeetingReminder_Subject -->
@@ -143,56 +140,56 @@ Description: {MEETING_DESCRIPTION}
 <!-- END: MeetingSpecial_Subject -->
 <!-- BEGIN: MeetingReminder -->
 <p>
-    Title: {MEETING_SUBJECT}<br />
-    When: {MEETING_STARTDATE}<br />
-    Location: {MEETING_LOCATION}<br />
-    Created By: {MEETING_CREATED_BY}
+    Тема: {MEETING_SUBJECT}<br />
+    Дата встречи: {MEETING_STARTDATE}<br />
+    Место встречи: {MEETING_LOCATION}<br />
+    Ответственный(ая): {MEETING_CREATED_BY}
 </p>
 <!-- END: MeetingReminder -->
 
 <!-- BEGIN: Email_Subject -->
-<p>SuiteCRM Email - {EMAIL_SUBJECT}</p>
+<p>SuiteCRM электронная почта - {EMAIL_SUBJECT}</p>
 <!-- END: Email_Subject -->
 <!-- BEGIN: Email -->
-<p><b>{ASSIGNER}</b> has assigned an Email to <b>{ASSIGNED_USER}</b>.</p>
+<p><b>{ASSIGNER}</b> назначил(а) E-mail пользователю <b>{ASSIGNED_USER}</b>.</p>
 <p>
-Subject: {EMAIL_SUBJECT}<br />
-Date Sent: {EMAIL_DATESENT}
+Тема: {EMAIL_SUBJECT}<br />
+Дата отправки: {EMAIL_DATESENT}
 </p>
-<p>You may <a href={URL}>review this Email</a>.</p>
+<p>Вы можете <a href={URL}>просмотреть информацию по этому E-mail</a>.</p>
 <!-- END: Email -->
 
 <!-- BEGIN: Contact_Subject -->
 <p>SuiteCRM - Контакт: {CONTACT_NAME}</p>
 <!-- END: Contact_Subject -->
 <!-- BEGIN: Contact -->
-<p><b>{ASSIGNER}</b> has assigned a Contact to <b>{ASSIGNED_USER}</b>.</p>
+<p><b>{ASSIGNER}</b> назначил Контакт пользователю <b>{ASSIGNED_USER}</b>.</p>
 <p>
 Имя: {CONTACT_NAME}<br />
 Описание: {CONTACT_DESCRIPTION}
 </p>
-<p>You may <a href={URL}>review this Contact</a>.</p>
+<p>Вы можете просмотреть информацию по этому контакту <a href={URL}>здесь</a>.</p>
 <!-- END: Contact -->
 
 <!-- BEGIN: Lead_Subject -->
 <p>SuiteCRM - Предварительный контакт: {LEAD_NAME}</p>
 <!-- END: Lead_Subject -->
 <!-- BEGIN: Lead -->
-<p><b>{ASSIGNER}</b> has assigned a Lead to <b>{ASSIGNED_USER}</b>.</p>
+<p><b>{ASSIGNER}</b> назначил(а) предварительный контакт пользователю <b>{ASSIGNED_USER}</b>.</p>
 <p>
 Имя: {LEAD_NAME}<br />
 Источник предв. контакта: {LEAD_SOURCE}<br />
 Статус: {LEAD_STATUS}<br />
 Описание: {LEAD_DESCRIPTION}
 </p>
-<p>You may <a href={URL}>review this Lead</a>.</p>
+<p>Вы можете просмотреть информацию по этому предв. контакту <a href={URL}>здесь</a>.</p>
 <!-- END: Lead -->
 
 <!-- BEGIN: Opportunity_Subject -->
 <p>SuiteCRM - Сделка: {OPPORTUNITY_NAME}</p>
 <!-- END: Opportunity_Subject -->
 <!-- BEGIN: Opportunity -->
-<p><b>{ASSIGNER}</b> has assigned an Opportunity to <b>{ASSIGNED_USER}</b>.</p>
+<p><b>{ASSIGNER}</b> назначил(а) сделку пользователю <b>{ASSIGNED_USER}</b>.</p>
 <p>
 Имя: {OPPORTUNITY_NAME}<br />
 Сумма: {OPPORTUNITY_AMOUNT}<br />
@@ -200,14 +197,14 @@ Date Sent: {EMAIL_DATESENT}
 Стадия продаж: {OPPORTUNITY_STAGE}<br />
 Описание: {OPPORTUNITY_DESCRIPTION}
 </p>
-<p>You may <a href={URL}>review this Opportunity</a>.</p>
+<p>Вы можете просмотреть информацию по этой сделке <a href={URL}>здесь</a>.</p>
 <!-- END: Opportunity -->
 
 <!-- BEGIN: Bug_Subject -->
 <p>SuiteCRM - Ошибка: {BUG_SUBJECT}</p>
 <!-- END: Bug_Subject -->
 <!-- BEGIN: Bug -->
-<p><b>{ASSIGNER}</b> has assigned a Bug to <b>{ASSIGNED_USER}</b>.</p>
+<p><b>{ASSIGNER}</b> назначил ошибку пользователю <b>{ASSIGNED_USER}</b>.</p>
 <p>
 Номер ошибки: {BUG_BUG_NUMBER}<br />
 Тема: {BUG_SUBJECT}<br />
@@ -219,15 +216,15 @@ Date Sent: {EMAIL_DATESENT}
 Описание: {BUG_DESCRIPTION}<br />
 Журнал: {BUG_WORK_LOG}
 </p>
-<p>You may <a href={URL}>review this Bug</a>.</p>
+<p>Вы можете <a href={URL}> рассмотреть эту ошибку</a>.</p>
 <!-- END: Bug -->
 
 <!-- BEGIN: Default_Subject -->
 <p>SuiteCRM - Назначено: {OBJECT}</p>
 <!-- END: Default_Subject -->
 <!-- BEGIN: Default -->
-<p><b>{ASSIGNER}</b> has assigned a(n) {OBJECT} to <b>{ASSIGNED_USER}</b>.</p>
-<p>You may <a href={URL}>review this {OBJECT}</a>.</p>
+<p><b>{ASSIGNER}</b> назначил {OBJECT} пользователю <b>{ASSIGNED_USER}</b>.</p>
+<p>Вы можете <a href={URL}> рассмотреть {OBJECT}</a>.</p>
 <!-- END: Default -->
 
 <!-- BEGIN: Call_Subject -->
@@ -245,7 +242,7 @@ Date Sent: {EMAIL_DATESENT}
 </p>
 <p>---</p>
 <p><a href={ACCEPT_URL}&accept_status=accept>Принять этот звонок</a>.</p>
-<p><a href={ACCEPT_URL}&accept_status=tentative>Tentatively Accept this call</a>.</p>
+<p><a href={ACCEPT_URL}&accept_status=tentative>По возможности принять этот Звонки</a>.</p>
 <p><a href={ACCEPT_URL}&accept_status=decline>Отменить этот звонок</a>.</p>
 <!-- END: Call -->
 
@@ -261,7 +258,7 @@ Date Sent: {EMAIL_DATESENT}
 Продолжительность: {CALL_HOURS}час., {CALL_MINUTES}мин.<br />
 Описание: {CALL_DESCRIPTION}
 </p>
-<p>You may <a href={URL}>review this Call</a>.</p>
+<p>Вы можете просмотреть информацию по этому звонку <a href={URL}>здесь</a>.</p>
 <!-- END: CallSpecial -->
 
 <!-- BEGIN: CallReminder_Subject -->
@@ -287,19 +284,19 @@ Date Sent: {EMAIL_DATESENT}
 Статус: {CAMPAIGN_STATUS}<br />
 Описание: {CAMPAIGN_DESCRIPTION}
 </p>
-<p>You may <a href={URL}>review this Campaign</a>.</p>
+<p>Вы можете просмотреть информацию по этой маркет. кампании <a href={URL}>здесь</a>.</p>
 <!-- END: Campaign -->
 
 <!-- BEGIN: Quota_Subject -->
-<p>SuiteCRM Quotas - Your Quota for {QUOTA_TIMEPERIOD}</p>
+<p>SuiteCRM комм. предложения — Предложение для вас от {QUOTA_TIMEPERIOD}</p>
 <!-- END: Quota_Subject -->
 <!-- BEGIN: Quota -->
-<p><b>{ASSIGNER}</b> has assigned a Quota to <b>{ASSIGNED_USER}</b>.</p>
+<p><b>{ASSIGNER}</b> назначил ответственного за Смету: <b>{ASSIGNED_USER}</b>.</p>
 <p>
 Сумма: {QUOTA_AMOUNT}<br />
 Период: {QUOTA_TIMEPERIOD}
 </p>
-<p>You may <a href={QUOTA_URL}>review this Quota assignment</a>.</p>
+<p>Вы можете <a href={QUOTA_URL}> отрецензировать назначение ответственного за Смету</a>.</p>
 <!-- END: Quota -->
 
 <!-- BEGIN: KBDocument_Subject -->

@@ -1,11 +1,11 @@
 <?php
-if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
-/*********************************************************************************
+/**
+ *
  * SugarCRM Community Edition is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
-
- * SuiteCRM is an extension to SugarCRM Community Edition developed by Salesagility Ltd.
- * Copyright (C) 2011 - 2014 Salesagility Ltd.
+ *
+ * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
+ * Copyright (C) 2011 - 2019 SalesAgility Ltd.
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -16,7 +16,7 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
  * details.
  *
  * You should have received a copy of the GNU Affero General Public License along with
@@ -34,35 +34,28 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
  * these Appropriate Legal Notices must retain the display of the "Powered by
  * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
- * reasonably feasible for  technical reasons, the Appropriate Legal Notices must
- * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
- ********************************************************************************/
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ */
 
-/*********************************************************************************
+if (!defined('sugarEntry') || !sugarEntry) {
+    die('Not A Valid Entry Point');
+}
 
- * Description:  Defines the English language pack for the base application.
- * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
- * All Rights Reserved.
- * Contributor(s): ______________________________________..
- ********************************************************************************/
-
-$mod_strings = array (
-  'LBL_MODULE_NAME' => 'Контрагенты',
-  'LBL_MODULE_TITLE' => 'Контрагенты - ГЛАВНАЯ',
-  'LBL_SEARCH_FORM_TITLE' => 'Поиск контрагентов',
-  'LBL_LIST_FORM_TITLE' => 'Список контрагентов',
-  'LBL_NEW_FORM_TITLE' => 'Создать контрагента',
-  'LNK_NEW_CONTACT' => 'Создать контакт',
-  'LNK_NEW_ACCOUNT' => 'Создать контрагента',
-  'LNK_NEW_OPPORTUNITY' => 'Создать сделку',
-  'LNK_NEW_CASE' => 'Создать обращение',
-  'LNK_NEW_NOTE' => 'Создать заметку или вложение',
-  'LNK_NEW_CALL' => 'Назначить звонок',
-  'LNK_NEW_EMAIL' => 'Отправить E-mail в архив',
-  'LNK_NEW_MEETING' => 'Назначить встречу',
-  'LNK_NEW_TASK' => 'Создать задачу',
-  'ERR_DELETE_RECORD' => 'Перед удалением контрагента должен быть определён номер записи.',
+$mod_strings = array(
+    'LBL_MODULE_NAME' => 'Контрагенты',
+    'LBL_MODULE_TITLE' => 'Контрагенты - ГЛАВНАЯ',
+    'LBL_SEARCH_FORM_TITLE' => 'Поиск контрагентов',
+    'LBL_LIST_FORM_TITLE' => 'Список контрагентов',
+    'LBL_NEW_FORM_TITLE' => 'Создать контрагента',
+    'LNK_NEW_CONTACT' => 'Создать контакт',
+    'LNK_NEW_ACCOUNT' => 'Создать контрагента',
+    'LNK_NEW_OPPORTUNITY' => 'Создать сделку',
+    'LNK_NEW_CASE' => 'Создать обращение',
+    'LNK_NEW_NOTE' => 'Создать заметку или вложение',
+    'LNK_NEW_CALL' => 'Назначить звонок',
+    'LNK_NEW_EMAIL' => 'Отправить E-mail в архив',
+    'LNK_NEW_MEETING' => 'Назначить встречу',
+    'LNK_NEW_TASK' => 'Создать задачу',
+    'ERR_DELETE_RECORD' => 'Перед удалением контрагента должен быть определён номер записи.',
 );
-
-
-?>

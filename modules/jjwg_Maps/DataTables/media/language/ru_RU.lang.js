@@ -1,23 +1,23 @@
 {
-    "sEmptyTable":     "No data available in table",
-    "sInfo":           "Showing _START_ to _END_ of _TOTAL_ entries",
-    "sInfoEmpty":      "Showing 0 to 0 of 0 entries",
-    "sInfoFiltered":   "(filtered from _MAX_ total entries)",
+    "sEmptyTable":     "Таблица пуста",
+    "sInfo":           "Показано от _START_ до _END_ из _TOTAL_ записей",
+    "sInfoEmpty":      "Показано от 0 до 0 из 0 записей",
+    "sInfoFiltered":   "(отфильтровано из _MAX_ всего записей)",
     "sInfoPostFix":    "",
     "sInfoThousands":  ",",
-    "sLengthMenu":     "Show _MENU_ entries",
-    "sLoadingRecords": "Loading...",
-    "sProcessing":     "Processing...",
-    "sSearch":         "Search:",
-    "sZeroRecords":    "No matching records found",
+    "sLengthMenu":     "Показ _MENU_ записи",
+    "sLoadingRecords": "Загрузка...",
+    "sProcessing":     "Процесс идёт...",
+    "sSearch":         "Поиск:",
+    "sZeroRecords":    "Нет записей, которые соответствуют запросу",
     "oPaginate": {
-        "sFirst":    "First",
-        "sLast":     "Last",
-        "sNext":     "Next",
-        "sPrevious": "Previous"
+        "sFirst":    "Первая",
+        "sLast":     "Последняя",
+        "sNext":     "Следующая",
+        "sPrevious": "Предыдущая"
     },
     "oAria": {
-        "sSortAscending":  ": activate to sort column ascending",
-        "sSortDescending": ": activate to sort column descending"
+        "sSortAscending":  ": сортировать колонки по возрастанию",
+        "sSortDescending": ": сортировать колонки по убыванию"
     }
 }

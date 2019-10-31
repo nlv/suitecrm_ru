@@ -1,11 +1,11 @@
 <?php
-if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
-/*********************************************************************************
+/**
+ *
  * SugarCRM Community Edition is a customer relationship management program developed by
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
  *
- * SuiteCRM is an extension to SugarCRM Community Edition developed by Salesagility Ltd.
- * Copyright (C) 2011 - 2016 Salesagility Ltd.
+ * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
+ * Copyright (C) 2011 - 2019 SalesAgility Ltd.
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -16,7 +16,7 @@ if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
  * details.
  *
  * You should have received a copy of the GNU Affero General Public License along with
@@ -34,17 +34,13 @@ if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
  * these Appropriate Legal Notices must retain the display of the "Powered by
  * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
- * reasonably feasible for  technical reasons, the Appropriate Legal Notices must
- * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
- ********************************************************************************/
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ */
 
-/*********************************************************************************
- * Description:  Defines the English language pack for the base application.
- * Portions created by SugarCRM are Copyright (C) SugarCRM, Inc.
- * All Rights Reserved.
- * Contributor(s): ______________________________________..
- ********************************************************************************/
-
+if (!defined('sugarEntry') || !sugarEntry) {
+    die('Not A Valid Entry Point');
+}
 
 $mod_strings = array(
     'LNK_NEW_CALL' => 'Назначить звонок',
@@ -56,9 +52,7 @@ $mod_strings = array(
     'LNK_MEETING_LIST' => 'Встречи',
     'LNK_TASK_LIST' => 'Задачи',
     'LNK_NOTE_LIST' => 'Заметки',
-    'LNK_EMAIL_LIST' => 'E-mail',
     'LBL_ADD_FIELD' => 'Добавить поле:',
-    'LBL_MODULE_SELECT' => 'Модуль для редактирования',
     'LBL_SEARCH_FORM_TITLE' => 'Поиск модуля',
     'COLUMN_TITLE_NAME' => 'Название поля',
     'COLUMN_TITLE_DISPLAY_LABEL' => 'Отображаемая надпись',
@@ -70,16 +64,10 @@ $mod_strings = array(
     'COLUMN_TITLE_COMMENT_TEXT' => 'Комментарий',
     'COLUMN_TITLE_REQUIRED_OPTION' => 'Обязательное поле',
     'COLUMN_TITLE_DEFAULT_VALUE' => 'Значение по умолчанию',
-    'COLUMN_TITLE_DEFAULT_EMAIL' => 'Значение по умолчанию',
-    'COLUMN_TITLE_EXT1' => 'Дополнительное мета-поле 1',
-    'COLUMN_TITLE_EXT2' => 'Дополнительное мета-поле 2',
-    'COLUMN_TITLE_EXT3' => 'Дополнительное мета-поле 3',
     'COLUMN_TITLE_FRAME_HEIGHT' => 'Высота фрейма',
     'COLUMN_TITLE_HTML_CONTENT' => 'HTML',
     'COLUMN_TITLE_URL' => 'URL по умолчанию',
     'COLUMN_TITLE_AUDIT' => 'Аудит',
-    'COLUMN_TITLE_FTS' => 'Full Text Searchable',
-    'COLUMN_TITLE_REPORTABLE' => 'Доступен для сообщения',
     'COLUMN_TITLE_MIN_VALUE' => 'Минимальное значение',
     'COLUMN_TITLE_MAX_VALUE' => 'Максимальное значение',
     'COLUMN_TITLE_LABEL_ROWS' => 'Строк',
@@ -88,16 +76,10 @@ $mod_strings = array(
     'COLUMN_TITLE_AUTOINC_NEXT' => 'Начать автонумерацию с',
     'COLUMN_DISABLE_NUMBER_FORMAT' => 'Не использовать разделитель',
     'COLUMN_TITLE_ENABLE_RANGE_SEARCH' => 'Поиск в диапазоне значений',
-    'COLUMN_TITLE_GLOBAL_SEARCH' => 'Глобальный поиск',
     'LBL_DROP_DOWN_LIST' => 'Комбобокс',
     'LBL_RADIO_FIELDS' => 'Переключатели',
     'LBL_MULTI_SELECT_LIST' => 'Список',
     'COLUMN_TITLE_PRECISION' => 'Точность',
-    'MSG_DELETE_CONFIRM' => 'Вы уверены, что хотите удалить этот элемент?',
-    'POPUP_INSERT_HEADER_TITLE' => 'Добавление пользовательского поля',
-    'POPUP_EDIT_HEADER_TITLE' => 'Модификация пользовательского поля',
-    'LNK_SELECT_CUSTOM_FIELD' => 'Редактирование / Удаление пользовательского поля',
-    'LNK_REPAIR_CUSTOM_FIELD' => 'Восстановление пользовательских полей',
     'LBL_MODULE' => 'Модуль',
     'COLUMN_TITLE_MASS_UPDATE' => 'Массовое обновление',
     'COLUMN_TITLE_IMPORTABLE' => 'Импортирование',
@@ -105,33 +87,18 @@ $mod_strings = array(
     'LBL_LABEL' => 'Надпись',
     'LBL_DATA_TYPE' => 'Тип данных',
     'LBL_DEFAULT_VALUE' => 'Значение по умолчанию',
-    'LBL_AUDITED' => 'Проверено',
-    'LBL_REPORTABLE' => 'Доступен для сообщения',
     'ERR_RESERVED_FIELD_NAME' => "Название зарезервировано",
-    'ERR_LENGTH' => "Название зарезервировано",
     'ERR_SELECT_FIELD_TYPE' => 'Укажите тип поля',
     'ERR_FIELD_NAME_ALREADY_EXISTS' => 'Поле с таким названием уже существует',
     'LBL_BTN_ADD' => 'Добавить',
     'LBL_BTN_EDIT' => 'Изменить',
     'LBL_GENERATE_URL' => 'Создать URL',
-    'LBL_DEPENDENT_CHECKBOX' => 'Зависимо',
-    'LBL_DEPENDENT_TRIGGER' => 'Триггер',
     'LBL_CALCULATED' => 'Вычисляемое значение',
-    'LBL_FORMULA' => 'Формула',
-    'LBL_DYNAMIC_VALUES_CHECKBOX' => 'Зависимо',
-    'LBL_BTN_EDIT_VISIBILITY' => 'Изменить видимость',
     'LBL_LINK_TARGET' => 'Открыть ссылку на',
     'LBL_IMAGE_WIDTH' => 'Ширина',
     'LBL_IMAGE_HEIGHT' => 'Высота',
     'LBL_IMAGE_BORDER' => 'Граница',
-    'COLUMN_TITLE_VALIDATE_US_FORMAT' => 'U.S. Format',
-    'LBL_DEPENDENT' => 'Зависимо',
-    'LBL_VISIBLE_IF' => 'Visible If',
-    'LBL_ENFORCED' => 'Enforced',
     'LBL_HELP' => 'Справка' /*for 508 compliance fix*/,
     'COLUMN_TITLE_INLINE_EDIT_TEXT' => 'Быстрая правка',
     'COLUMN_TITLE_PARENT_ENUM' => 'Родительский комбобокс',
 );
-
-
-?>
